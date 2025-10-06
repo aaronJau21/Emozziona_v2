@@ -1,10 +1,15 @@
+"use client";
+
 import React from "react";
+import { FaGift, FaHandshake, FaHandSparkles, FaLeaf } from "react-icons/fa";
+// import { Gift, Leaf, Sparkles, Handshake } from "lucide-react";
 
 export const MainAbout = () => {
   return (
-    <main className="space-y-12 max-w-7xl mx-auto mb-16">
+    <main className="space-y-20 max-w-5xl mx-auto mb-24 px-6">
+      {/* Misión */}
       <section>
-        <h2 className="text-3xl font-semibold text-gray-900 border-b-2 border-primary pb-2">
+        <h2 className="text-3xl sm:text-4xl font-semibold text-[#13294b] border-b-4 border-[#13294b]/30 inline-block pb-2">
           Nuestra Misión
         </h2>
         <p className="mt-4 text-lg text-gray-700 leading-relaxed">
@@ -16,19 +21,21 @@ export const MainAbout = () => {
         </p>
       </section>
 
+      {/* Visión */}
       <section>
-        <h2 className="text-3xl font-semibold text-gray-900 border-b-2 border-primary pb-2">
+        <h2 className="text-3xl sm:text-4xl font-semibold text-[#13294b] border-b-4 border-[#13294b]/30 inline-block pb-2">
           Nuestra Visión
         </h2>
         <p className="mt-4 text-lg text-gray-700 leading-relaxed">
           Ser una empresa líder en Lima y referente en Perú, reconocida por
           transformar el acto de regalar en un momento extraordinario, innovador
-          y con compromiso ecofriendredly.
+          y con compromiso ecofriendly.
         </p>
       </section>
 
+      {/* Filosofía */}
       <section>
-        <h2 className="text-3xl font-semibold text-gray-900 border-b-2 border-primary pb-2">
+        <h2 className="text-3xl sm:text-4xl font-semibold text-[#13294b] border-b-4 border-[#13294b]/30 inline-block pb-2">
           Nuestra Filosofía
         </h2>
         <p className="mt-4 text-lg text-gray-700 leading-relaxed">
@@ -41,46 +48,88 @@ export const MainAbout = () => {
         </p>
       </section>
 
-      <section>
-        <h2 className="text-3xl font-semibold text-center text-gray-900 mb-8">
+      {/* Propuesta Única de Valor */}
+      <section className="bg-gray-50 py-12 px-6 rounded-2xl shadow-inner">
+        <h2 className="text-3xl sm:text-4xl font-semibold text-center text-[#13294b] mb-12">
           Propuesta Única de Valor
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-            <h3 className="text-xl font-bold text-primary mb-2">
-              Regalos Funcionales con Estilo y Calidad
-            </h3>
-            <p className="text-gray-700">
-              Ofrecemos regalos que combinan utilidad y elegancia, perfectos
-              para personas que valoran la calidad y los detalles.
-            </p>
+          {/* Tarjeta 1 */}
+          <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+            <div className="flex items-start gap-3">
+              {/* <Gift className="text-[#13294b] w-6 h-6 mt-1" /> */}
+              <div>
+                <div className="flex flex-row items-center gap-x-1.5">
+                  <FaGift size={36} />
+                  <h3 className="text-xl font-bold text-gray-900 mb-1">
+                    Regalos Funcionales con Estilo y Calidad
+                  </h3>
+                </div>
+
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Ofrecemos regalos que combinan utilidad y elegancia, perfectos
+                  para personas que valoran la calidad y los detalles.
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-            <h3 className="text-xl font-bold text-primary mb-2">
-              Asesoría Personalizada
-            </h3>
-            <p className="text-gray-700">
-              Desde la idea hasta la entrega, te asesoramos para que encuentres
-              el regalo ideal que refuerce la relación con tus clientes y
-              colaboradores.
-            </p>
+
+          {/* Tarjeta 2 */}
+          <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+            <div className="flex items-start gap-3">
+              {/* <Handshake className="text-[#13294b] w-6 h-6 mt-1" /> */}
+              <div>
+                <div className="flex flex-row items-center gap-x-1.5">
+                  <FaHandshake size={36} />
+                  <h3 className="text-xl font-bold text-gray-900 mb-1">
+                    Asesoría Personalizada
+                  </h3>
+                </div>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Desde la idea hasta la entrega, te asesoramos para que
+                  encuentres el regalo ideal que refuerce la relación con tus
+                  clientes y colaboradores.
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-            <h3 className="text-xl font-bold text-primary mb-2">
-              Regalos Innovadores
-            </h3>
-            <p className="text-gray-700">
-              Si buscas algo diferente, tenemos opciones creativas para destacar
-              y dejar huella.
-            </p>
+
+          {/* Tarjeta 3 */}
+          <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+            <div className="flex items-start gap-3">
+              {/* <Sparkles className="text-[#13294b] w-6 h-6 mt-1" /> */}
+              <div>
+                <div className="flex flex-row items-center gap-x-1.5">
+                  <FaHandSparkles size={36} />
+                  <h3 className="text-xl font-bold text-gray-900 mb-1">
+                    Regalos Innovadores
+                  </h3>
+                </div>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Si buscas algo diferente, tenemos opciones creativas para
+                  destacar y dejar huella.
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-            <h3 className="text-xl font-bold text-primary mb-2">
-              Sostenibilidad
-            </h3>
-            <p className="text-gray-700">
-              Cuidamos al planeta con prácticas ecofriendly.
-            </p>
+
+          {/* Tarjeta 4 */}
+          <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+            <div className="flex items-start gap-3">
+              {/* <Leaf className="text-[#13294b] w-6 h-6 mt-1" /> */}
+              <div>
+                <div className="flex flex-row items-center gap-x-1.5">
+                  <FaLeaf size={36} />
+                  <h3 className="text-xl font-bold text-gray-900 mb-1">
+                    Sostenibilidad
+                  </h3>
+                </div>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Cuidamos al planeta con prácticas ecofriendly y empaques
+                  responsables.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

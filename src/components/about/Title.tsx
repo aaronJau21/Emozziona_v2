@@ -1,12 +1,18 @@
 export const Title = () => {
   return (
-    <section className="text-center mb-12 mt-9">
-      <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 tracking-tight">
-        Filosofía de Emozziona
-      </h1>
-      <p className="mt-4 text-lg text-gray-600">
-        Más que regalos, creamos conexiones.
-      </p>
+    <section className="text-center mb-16 mt-12 relative overflow-hidden">
+      {/* Fondo decorativo sutil */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#13294b]/5 to-transparent opacity-30" />
+
+      <div className="relative z-10">
+        <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 tracking-tight">
+          Filosofía de Emozziona
+        </h1>
+        <div className="w-24 h-1 bg-gradient-to-r from-[#13294b] to-blue-400 mx-auto my-4 rounded-full" />
+        <p className="mt-3 text-lg text-gray-600 italic">
+          Más que regalos, creamos conexiones.
+        </p>
+      </div>
     </section>
   );
 };
