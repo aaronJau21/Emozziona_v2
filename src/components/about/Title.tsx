@@ -6,11 +6,11 @@ export const Title = () => {
 
       <div className="relative z-10">
         <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 tracking-tight">
-          Filosofía de Emozziona
+          💝 Más que regalos, creamos conexiones
         </h1>
         <div className="w-24 h-1 bg-gradient-to-r from-[#13294b] to-blue-400 mx-auto my-4 rounded-full" />
         <p className="mt-3 text-lg text-gray-600 italic">
-          Más que regalos, creamos conexiones.
+          Cada detalle cuenta una historia, cada obsequio deja huella.
         </p>
       </div>
     </section>
