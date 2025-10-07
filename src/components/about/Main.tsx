@@ -2,23 +2,37 @@
 
 import React from "react";
 import { FaGift, FaHandshake, FaHandSparkles, FaLeaf } from "react-icons/fa";
-// import { Gift, Leaf, Sparkles, Handshake } from "lucide-react";
+import Image from "next/image";
 
 export const MainAbout = () => {
   return (
-    <main className="space-y-20 max-w-5xl mx-auto mb-24 px-6">
+    <main className="space-y-20 max-w-7xl mx-auto mb-24 px-6">
       {/* Misión */}
       <section>
         <h2 className="text-3xl sm:text-4xl font-semibold text-[#13294b] border-b-4 border-[#13294b]/30 inline-block pb-2">
           Nuestra Misión
         </h2>
-        <p className="mt-4 text-lg text-gray-700 leading-relaxed">
-          Nuestra misión es brindar experiencias memorables a través de regalos
-          de calidad que transmitan gratitud, cercanía y valor en cada detalle.
-          Buscamos fortalecer las relaciones entre empresas, colaboradores y
-          clientes, creando momentos únicos para celebrar, disfrutar y conectar
-          de manera auténtica y con conciencia ambiental.
-        </p>
+        <div className="flex flex-col md:flex-row items-center gap-8 mt-4">
+          <div className="w-full md:w-1/2">
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Nuestra misión es brindar experiencias memorables a través de
+              regalos de calidad que transmitan gratitud, cercanía y valor en
+              cada detalle. Buscamos fortalecer las relaciones entre empresas,
+              colaboradores y clientes, creando momentos únicos para celebrar,
+              disfrutar y conectar de manera auténtica y con conciencia
+              ambiental.
+            </p>
+          </div>
+          <div className="w-full md:w-1/2">
+            <Image
+              src="/about/mision.png"
+              alt="Nuestra Misión"
+              width={500}
+              height={300}
+              className="rounded-lg object-cover"
+            />
+          </div>
+        </div>
       </section>
 
       {/* Visión */}
@@ -26,11 +40,24 @@ export const MainAbout = () => {
         <h2 className="text-3xl sm:text-4xl font-semibold text-[#13294b] border-b-4 border-[#13294b]/30 inline-block pb-2">
           Nuestra Visión
         </h2>
-        <p className="mt-4 text-lg text-gray-700 leading-relaxed">
-          Ser una empresa líder en Lima y referente en Perú, reconocida por
-          transformar el acto de regalar en un momento extraordinario, innovador
-          y con compromiso ecofriendly.
-        </p>
+        <div className="flex flex-col md:flex-row-reverse items-center gap-8 mt-4">
+          <div className="w-full md:w-1/2">
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Ser una empresa líder en Lima y referente en Perú, reconocida por
+              transformar el acto de regalar en un momento extraordinario,
+              innovador y con compromiso ecofriendly.
+            </p>
+          </div>
+          <div className="w-full md:w-1/2">
+            <Image
+              src="/about/vision.png"
+              alt="Nuestra Visión"
+              width={500}
+              height={300}
+              className="rounded-lg object-cover"
+            />
+          </div>
+        </div>
       </section>
 
       {/* Filosofía */}
