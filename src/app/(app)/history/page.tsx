@@ -4,11 +4,19 @@ import { AboutPageSchema, BreadcrumbSchema } from "@/components";
 
 export const metadata: Metadata = {
   title: "Nuestra Historia",
-  description: "Conoce la historia de Emozziona y cómo Justina Martínez transformó la industria de regalos corporativos. Dos años creando experiencias memorables con diseño intencional y maestría en el detalle.",
-  keywords: ["historia emozziona", "justina martinez", "fundadora emozziona", "regalos memorables", "packaging premium"],
+  description:
+    "Conoce la historia de Emozziona y cómo Justina Martínez transformó la industria de regalos corporativos. Dos años creando experiencias memorables con diseño intencional y maestría en el detalle.",
+  keywords: [
+    "historia emozziona",
+    "justina martinez",
+    "fundadora emozziona",
+    "regalos memorables",
+    "packaging premium",
+  ],
   openGraph: {
     title: "Historia de Emozziona | Transformando Regalos en Recuerdos",
-    description: "Descubre cómo Justina Martínez fundó Emozziona para transformar regalos corporativos en experiencias memorables con diseño y propósito.",
+    description:
+      "Descubre cómo Justina Martínez fundó Emozziona para transformar regalos corporativos en experiencias memorables con diseño y propósito.",
     images: [
       {
         url: "/hisstory/duenia.jpeg",
@@ -22,130 +30,150 @@ export const metadata: Metadata = {
 
 export default function HistoryPage() {
   const breadcrumbItems = [
-    { name: 'Inicio', url: 'https://emozziona.com' },
-    { name: 'Historia', url: 'https://emozziona.com/history' },
+    { name: "Inicio", url: "https://emozziona.com" },
+    { name: "Historia", url: "https://emozziona.com/history" },
   ];
 
   return (
     <>
       <AboutPageSchema />
       <BreadcrumbSchema items={breadcrumbItems} />
-      <section className="bg-white text-gray-800 py-12 md:py-20">
-      <div className="container mx-auto px-4 md:px-6">
-        <h1 className="text-3xl md:text-4xl font-bold text-center mb-8 text-[#C2878D]">
-          HISTORIA EMOZZIONA
-        </h1>
-        <div className="grid md:grid-cols-3 gap-8 md:gap-12 items-center">
-          <div className="md:col-span-2">
-            <h2 className="text-2xl font-semibold text-[#D6A692] mb-4">
-              EMOZZIONA: Transformando Regalos en Recuerdos con Detalle y Propósito
+      <section className="bg-gray-50 text-gray-800 pt-16 md:pt-24">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Nuestra Historia: Pasión por el Detalle
+            </h1>
+            <p className="text-lg text-gray-600">
+              Descubre cómo Emozziona nació de la visión de una mujer que quiso
+              devolverle el alma a los regalos.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-5 gap-8 md:gap-12 items-center">
+            <div className="md:col-span-3">
+              <h2 className="text-3xl font-semibold text-[#C2878D] mb-6">
+                De la idea a la acción: Un viaje de propósito
+              </h2>
+              <div className="space-y-6 text-gray-700">
+                <p>
+                  Hace dos años, Justina Martínez, fundadora de Emozziona, tuvo
+                  una revelación: en un mundo lleno de objetos funcionales, los
+                  regalos habían perdido su magia. Se habían convertido en una
+                  simple transacción, no en un recuerdo que se atesora.
+                </p>
+                <p>
+                  Ella creía firmemente que un regalo tiene el poder de
+                  comunicar más que mil palabras: gratitud, compromiso y una
+                  profunda conexión.
+                </p>
+                <blockquote className="border-l-4 border-[#D6A692] pl-6 py-3 text-lg italic text-gray-600 bg-white rounded-r-lg">
+                  “Sentía que faltaba ese toque personal, ese ‘algo’ que hiciera
+                  que la otra persona sintiera que ese objeto había sido pensado
+                  solo para ella.”
+                  <cite className="block font-semibold mt-4 not-italic">
+                    – Justina Martínez, Fundadora de EMOZZIONA
+                  </cite>
+                </blockquote>
+                <p>
+                  Así nació EMOZZIONA. No para vender merchandising, sino para
+                  solucionar un problema emocional: la falta de memoria en el
+                  mundo corporativo y personal.
+                </p>
+                <p className="font-bold text-[#C2878D] text-xl">
+                  Nuestra misión: Hacer que cada regalo sea memorable.
+                </p>
+              </div>
+            </div>
+            <div className="md:col-span-2 flex justify-center">
+              <div className="relative w-80 h-80">
+                <Image
+                  src={"/hisstory/duenia.jpeg"}
+                  alt="Justina Martinez, fundadora de Emozziona"
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-xl shadow-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="py-16 md:py-24 bg-white">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="max-w-4xl mx-auto text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Nuestra Garantía: Regalos que Dejan Huella
+              </h2>
+              <p className="text-lg text-gray-600">
+                Más que productos, creamos experiencias. Así es como aseguramos
+                que cada regalo genere recordación y lealtad.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                <h3 className="font-bold text-xl text-[#C2878D] mb-3">
+                  Diseño con Intención
+                </h3>
+                <p className="text-gray-700">
+                  No es solo un logo impreso; es entender la historia de tu
+                  marca y plasmarla en un objeto útil y hermoso que genera
+                  afinidad con quien lo recibe.
+                </p>
+              </div>
+              <div className="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                <h3 className="font-bold text-xl text-[#C2878D] mb-3">
+                  Maestría en el Detalle
+                </h3>
+                <p className="text-gray-700">
+                  Nuestra obsesión por el packaging y la presentación asegura
+                  una experiencia inolvidable. Cada detalle está pensado para
+                  traducir tu inversión en un "WOW" inmediato.
+                </p>
+              </div>
+              <div className="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                <h3 className="font-bold text-xl text-[#C2878D] mb-3">
+                  Compromiso Emocional
+                </h3>
+                <p className="text-gray-700">
+                  No vendemos productos, invertimos en momentos de alegría,
+                  gratitud y motivación para tu equipo y clientes. El efecto
+                  emocional es nuestro principal objetivo.
+                </p>
+              </div>
+              <div className="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                <h3 className="font-bold text-xl text-[#C2878D] mb-3">
+                  Calidad que Inspira Confianza
+                </h3>
+                <p className="text-gray-700">
+                  Un regalo de alta calidad es una extensión del prestigio de tu
+                  empresa. Garantizamos que cada producto refuerce la confianza
+                  y coherencia de tu marca.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section className="bg-secondary text-white pt-16 md:py-24">
+          <div className="container mx-auto px-4 md:px-6 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Deja una Marca Imborrable
             </h2>
-            <p className="mb-4">
-              Hace dos años, Justina Martínez, tuvo una revelación: en un mundo
-              lleno de objetos funcionales y comerciales, los regalos habían
-              perdido su magia. Se habían convertido en una simple transacción,
-              un artículo que se recibe, no un recuerdo que se atesora.
+            <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8">
+              Hoy, EMOZZIONA es el socio ideal para empresas que, como la tuya,
+              saben que la verdadera conexión se construye a través de los
+              detalles. Asegura que tu próximo regalo no solo sea entregado,
+              sino recordado y presumido.
             </p>
-            <p className="mb-6">
-              Ella creía firmemente que un regalo tiene el poder de comunicar
-              más que mil palabras: gratitud, compromiso, y una profunda
-              conexión.
-            </p>
-            <blockquote className="border-l-4 border-[#D6A692] pl-4 py-2 mb-6 italic">
-              “Cada vez que regalaba algo, sentía que faltaba ese toque
-              personal, ese ‘algo’ que hiciera que la otra persona sintiera que
-              ese objeto había sido pensado solo para ella.” –{" "}
-              <span className="font-semibold">Justina Martínez, Fundadora de EMOZZIONA.</span>
-            </blockquote>
-            <p className="mb-4">
-              Así nació EMOZZIONA. No fue creada para vender merchandising, sino
-              para solucionar un problema emocional: la falta de memoria en el
-              mundo corporativo y personal.
-            </p>
-            <p className="font-bold text-[#C2878D] mb-6">
-              Desde el primer día, nuestra misión fue clara y radical: Hacer que
-              cada regalo sea memorable.
-            </p>
+            <a
+              href="/contact"
+              className="bg-white text-[#C2878D] font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-100 transition-colors duration-300"
+            >
+              Crear un Recuerdo Memorable
+            </a>
           </div>
-          <div className="flex justify-center">
-            <div className="w-64 h-64 bg-gray-200 rounded-full flex items-center justify-center">
-              <Image
-                src={'/hisstory/duenia.jpeg'}
-                alt="foto de  Justina Martinez"
-                width={500}
-                height={500}
-                className="rounded-full"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-12">
-          <h3 className="text-2xl font-semibold text-[#D6A692] mb-4 text-center">
-            ¿Cómo garantizamos un regalo que genera ventas y lealtad?
-          </h3>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h4 className="font-bold text-lg text-[#C2878D] mb-2">Diseño con Intención</h4>
-              <p>
-                No es solo un logo impreso; es entender la historia de tu marca
-                y plasmarla en un objeto útil y hermoso que genera afinidad con
-                quien lo recibe.
-              </p>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h4 className="font-bold text-lg text-[#C2878D] mb-2">
-                La Maestría del Detalle (Nuestro Diferenciador)
-              </h4>
-              <p>
-                La fundadora pone un enfoque obsesivo en el packaging y la
-                presentación. Cada pack de regalo se arma con un detalle
-                minucioso para elevar la experiencia. El receptor debe sentir
-                que abrió algo realmente especial. Este detalle es lo que
-                traduce tu inversión en un &quot;WOW&quot; inmediato y una recomendación
-                futura.
-              </p>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h4 className="font-bold text-lg text-[#C2878D] mb-2">
-                Compromiso con la Emoción
-              </h4>
-              <p>
-                Nos centramos en el efecto que queremos causar. Cuando eliges
-                EMOZZIONA, no estás comprando una agenda o un termo, estás
-                invirtiendo en un momento de alegría, gratitud o motivación
-                para tu equipo o tus clientes.
-              </p>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h4 className="font-bold text-lg text-[#C2878D] mb-2">
-                Calidad que Demuestra Valor
-              </h4>
-              <p>
-                Entendemos que un regalo corporativo de alta calidad es una
-                extensión del prestigio de tu empresa. Por eso, garantizamos
-                que cada producto refuerce la confianza y la coherencia de tu
-                marca.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-12 text-center">
-          <p className="mb-4">
-            Hoy, dos años después, EMOZZIONA se ha convertido en el socio ideal
-            para empresas que, como la tuya, saben que la verdadera conexión se
-            construye a través de los detalles. Estamos aquí para asegurar que
-            tu próximo regalo no sea solo entregado, sino recordado y
-            presumido.
-          </p>
-          <p className="font-semibold text-lg text-[#C2878D]">
-            Únete a las empresas que han decidido dejar una marca imborrable.
-            Empecemos a crear tu próximo recuerdo memorable.
-          </p>
-        </div>
-      </div>
-    </section>
+        </section>
+      </section>
     </>
   );
 }

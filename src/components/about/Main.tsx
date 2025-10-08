@@ -3,6 +3,7 @@
 import React from "react";
 import { FaGift, FaHandshake, FaHandSparkles, FaLeaf } from "react-icons/fa";
 import Image from "next/image";
+import { montserrat, trajan } from "@/lib/fonts";
 
 export const MainAbout = () => {
   return (
@@ -14,7 +15,9 @@ export const MainAbout = () => {
         </h2>
         <div className="flex flex-col md:flex-row items-center gap-8 mt-4">
           <div className="w-full md:w-1/2">
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p
+              className={`text-lg text-gray-700 leading-relaxed ${montserrat.className}`}
+            >
               Nuestra misión es brindar experiencias memorables a través de
               regalos de calidad que transmitan gratitud, cercanía y valor en
               cada detalle. Buscamos fortalecer las relaciones entre empresas,
@@ -25,7 +28,7 @@ export const MainAbout = () => {
           </div>
           <div className="w-full md:w-1/2">
             <Image
-              src="/about/mision.png"
+              src="/about/vision.png"
               alt="Nuestra Misión"
               width={500}
               height={300}
@@ -42,7 +45,9 @@ export const MainAbout = () => {
         </h2>
         <div className="flex flex-col md:flex-row-reverse items-center gap-8 mt-4">
           <div className="w-full md:w-1/2">
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p
+              className={`text-lg text-gray-700 leading-relaxed ${montserrat.className}`}
+            >
               Ser una empresa líder en Lima y referente en Perú, reconocida por
               transformar el acto de regalar en un momento extraordinario,
               innovador y con compromiso ecofriendly.
@@ -50,7 +55,7 @@ export const MainAbout = () => {
           </div>
           <div className="w-full md:w-1/2">
             <Image
-              src="/about/vision.png"
+              src="/about/mision.png"
               alt="Nuestra Visión"
               width={500}
               height={300}
@@ -65,7 +70,9 @@ export const MainAbout = () => {
         <h2 className="text-3xl sm:text-4xl font-semibold text-[#13294b] border-b-4 border-[#13294b]/30 inline-block pb-2">
           Nuestra Filosofía
         </h2>
-        <p className="mt-4 text-lg text-gray-700 leading-relaxed">
+        <p
+          className={` mt-4 text-lg text-gray-700 leading-relaxed ${montserrat.className}`}
+        >
           Desde la fundación de Emozziona en el año 2022, teníamos una idea
           clara: un regalo es mucho más que un objeto. Regalar es un gesto que
           genera emociones, como sonrisas, abrazos y recuerdos que perduran.
@@ -78,7 +85,7 @@ export const MainAbout = () => {
       {/* Propuesta Única de Valor */}
       <section className="bg-slate-50 py-20 sm:py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl sm:text-5xl font-bold text-center text-[#13294b] mb-16">
+          <h2 className={`text-4xl sm:text-5xl font-bold text-center text-[#13294b] mb-16 ${trajan.className}`}>
             Propuesta Única de Valor
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -87,7 +94,7 @@ export const MainAbout = () => {
               <div className="flex justify-center items-center mx-auto mb-6 w-20 h-20 bg-blue-100 rounded-full">
                 <FaGift className="text-[#13294b]" size={40} />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3 h-14 flex items-center justify-center">
+              <h3 className={`text-xl font-semibold text-gray-900 mb-3 h-14 flex items-center justify-center ${montserrat.className} mb-5`}>
                 Regalos Funcionales con Estilo y Calidad
               </h3>
               <p className="text-gray-600 leading-relaxed">
@@ -101,7 +108,7 @@ export const MainAbout = () => {
               <div className="flex justify-center items-center mx-auto mb-6 w-20 h-20 bg-blue-100 rounded-full">
                 <FaHandshake className="text-[#13294b]" size={40} />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3 h-14 flex items-center justify-center">
+              <h3 className={`text-xl font-semibold text-gray-900 mb-3 h-14 flex items-center justify-center ${montserrat.className} mb-5`}>
                 Asesoría Personalizada
               </h3>
               <p className="text-gray-600 leading-relaxed">
@@ -116,7 +123,7 @@ export const MainAbout = () => {
               <div className="flex justify-center items-center mx-auto mb-6 w-20 h-20 bg-blue-100 rounded-full">
                 <FaHandSparkles className="text-[#13294b]" size={40} />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3 h-14 flex items-center justify-center">
+              <h3 className={`text-xl font-semibold text-gray-900 mb-3 h-14 flex items-center justify-center ${montserrat.className} mb-5`}>
                 Regalos Innovadores
               </h3>
               <p className="text-gray-600 leading-relaxed">
@@ -130,7 +137,7 @@ export const MainAbout = () => {
               <div className="flex justify-center items-center mx-auto mb-6 w-20 h-20 bg-blue-100 rounded-full">
                 <FaLeaf className="text-[#13294b]" size={40} />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3 h-14 flex items-center justify-center">
+              <h3 className={`text-xl font-semibold text-gray-900 mb-3 h-14 flex items-center justify-center ${montserrat.className} mb-5`}>
                 Sostenibilidad
               </h3>
               <p className="text-gray-600 leading-relaxed">
