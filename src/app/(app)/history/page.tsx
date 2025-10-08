@@ -127,7 +127,7 @@ export default function HistoryPage() {
                 <p className="text-gray-700">
                   Nuestra obsesión por el packaging y la presentación asegura
                   una experiencia inolvidable. Cada detalle está pensado para
-                  traducir tu inversión en un "WOW" inmediato.
+                  traducir tu inversión en un {"WOW"} inmediato.
                 </p>
               </div>
               <div className="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
