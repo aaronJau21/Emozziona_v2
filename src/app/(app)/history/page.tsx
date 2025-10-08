@@ -60,7 +60,7 @@ export default function HistoryPage() {
               id="historia-heading"
               className="text-4xl md:text-5xl font-extrabold tracking-tight text-primary mb-4"
             >
-              Nuestra Historia: Pasión por el Detalle
+              Nuestra historia: Pasión por el detalle
             </h1>
             <p className="text-lg md:text-xl text-gray-600">
               Descubre cómo Emozziona nació de la visión de una mujer que quiso
@@ -74,7 +74,7 @@ export default function HistoryPage() {
               <h2 className="text-2xl md:text-3xl font-semibold text-secondary mb-6">
                 De la idea a la acción: Un viaje de propósito
               </h2>
-              <div className="space-y-6 text-gray-700 leading-relaxed">
+              <div className="space-y-6 text-primary leading-relaxed text-justify">
                 <p>
                   Hace dos años, Justina Martínez, fundadora de Emozziona, tuvo
                   una revelación: en un mundo lleno de objetos funcionales, los

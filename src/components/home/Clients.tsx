@@ -65,13 +65,12 @@ export const Clients = () => {
         >
           {clients.map((client, index) => (
             <SwiperSlide key={index}>
-              <div className="flex items-center justify-center h-96">
+              <div className="flex items-center justify-center h-52">
                 <Image
                   src={client.src}
                   alt={client.alt}
-                  width={200}
-                  height={200}
-                  className="object-contain"
+                  width={110}
+                  height={110}
                 />
               </div>
             </SwiperSlide>

@@ -1,3 +1,4 @@
+import { montserrat, trajan } from "@/lib/fonts";
 import Image from "next/image";
 
 const products = [
@@ -13,11 +14,16 @@ const products = [
 
 export const Product = () => {
   return (
-    <section className="max-w-7xl mx-auto my-10 px-4 sm:px-6 lg:px-8" id="productos">
-      <h2 className="text-3xl sm:text-4xl text-center text-secondary font-black">
+    <section
+      className="max-w-7xl mx-auto my-10 px-4 sm:px-6 lg:px-8"
+      id="productos"
+    >
+      <h2
+        className={`text-3xl sm:text-4xl text-center text-primary font-semibold ${montserrat.className}`}
+      >
         Productos
       </h2>
-      <p className="text-sm sm:text-base text-center text-marron font-semibold mt-2">
+      <p className={`text-sm sm:text-base text-center text-marron font-semibold mt-2 ${trajan.className}`}>
         Descubre nuestros productos más populares
       </p>
 
