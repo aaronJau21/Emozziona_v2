@@ -76,86 +76,67 @@ export const MainAbout = () => {
       </section>
 
       {/* Propuesta Única de Valor */}
-      <section className="bg-gray-50 py-12 px-6 rounded-2xl shadow-inner">
-        <h2 className="text-3xl sm:text-4xl font-semibold text-center text-[#13294b] mb-12">
-          Propuesta Única de Valor
-        </h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          {/* Tarjeta 1 */}
-          <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-            <div className="flex items-start gap-3">
-              {/* <Gift className="text-[#13294b] w-6 h-6 mt-1" /> */}
-              <div>
-                <div className="flex flex-row items-center gap-x-1.5">
-                  <FaGift size={36} />
-                  <h3 className="text-xl font-bold text-gray-900 mb-1">
-                    Regalos Funcionales con Estilo y Calidad
-                  </h3>
-                </div>
-
-                <p className="text-gray-700 text-sm leading-relaxed">
-                  Ofrecemos regalos que combinan utilidad y elegancia, perfectos
-                  para personas que valoran la calidad y los detalles.
-                </p>
+      <section className="bg-slate-50 py-20 sm:py-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl sm:text-5xl font-bold text-center text-[#13294b] mb-16">
+            Propuesta Única de Valor
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+            {/* Card 1 */}
+            <div className="bg-white p-8 rounded-2xl shadow-xl text-center transform hover:-translate-y-2 transition-transform duration-300">
+              <div className="flex justify-center items-center mx-auto mb-6 w-20 h-20 bg-blue-100 rounded-full">
+                <FaGift className="text-[#13294b]" size={40} />
               </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3 h-14 flex items-center justify-center">
+                Regalos Funcionales con Estilo y Calidad
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Ofrecemos regalos que combinan utilidad y elegancia, perfectos
+                para personas que valoran la calidad y los detalles.
+              </p>
             </div>
-          </div>
 
-          {/* Tarjeta 2 */}
-          <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-            <div className="flex items-start gap-3">
-              {/* <Handshake className="text-[#13294b] w-6 h-6 mt-1" /> */}
-              <div>
-                <div className="flex flex-row items-center gap-x-1.5">
-                  <FaHandshake size={36} />
-                  <h3 className="text-xl font-bold text-gray-900 mb-1">
-                    Asesoría Personalizada
-                  </h3>
-                </div>
-                <p className="text-gray-700 text-sm leading-relaxed">
-                  Desde la idea hasta la entrega, te asesoramos para que
-                  encuentres el regalo ideal que refuerce la relación con tus
-                  clientes y colaboradores.
-                </p>
+            {/* Card 2 */}
+            <div className="bg-white p-8 rounded-2xl shadow-xl text-center transform hover:-translate-y-2 transition-transform duration-300">
+              <div className="flex justify-center items-center mx-auto mb-6 w-20 h-20 bg-blue-100 rounded-full">
+                <FaHandshake className="text-[#13294b]" size={40} />
               </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3 h-14 flex items-center justify-center">
+                Asesoría Personalizada
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Desde la idea hasta la entrega, te asesoramos para que
+                encuentres el regalo ideal que refuerce la relación con tus
+                clientes y colaboradores.
+              </p>
             </div>
-          </div>
 
-          {/* Tarjeta 3 */}
-          <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-            <div className="flex items-start gap-3">
-              {/* <Sparkles className="text-[#13294b] w-6 h-6 mt-1" /> */}
-              <div>
-                <div className="flex flex-row items-center gap-x-1.5">
-                  <FaHandSparkles size={36} />
-                  <h3 className="text-xl font-bold text-gray-900 mb-1">
-                    Regalos Innovadores
-                  </h3>
-                </div>
-                <p className="text-gray-700 text-sm leading-relaxed">
-                  Si buscas algo diferente, tenemos opciones creativas para
-                  destacar y dejar huella.
-                </p>
+            {/* Card 3 */}
+            <div className="bg-white p-8 rounded-2xl shadow-xl text-center transform hover:-translate-y-2 transition-transform duration-300">
+              <div className="flex justify-center items-center mx-auto mb-6 w-20 h-20 bg-blue-100 rounded-full">
+                <FaHandSparkles className="text-[#13294b]" size={40} />
               </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3 h-14 flex items-center justify-center">
+                Regalos Innovadores
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Si buscas algo diferente, tenemos opciones creativas para
+                destacar y dejar huella.
+              </p>
             </div>
-          </div>
 
-          {/* Tarjeta 4 */}
-          <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-            <div className="flex items-start gap-3">
-              {/* <Leaf className="text-[#13294b] w-6 h-6 mt-1" /> */}
-              <div>
-                <div className="flex flex-row items-center gap-x-1.5">
-                  <FaLeaf size={36} />
-                  <h3 className="text-xl font-bold text-gray-900 mb-1">
-                    Sostenibilidad
-                  </h3>
-                </div>
-                <p className="text-gray-700 text-sm leading-relaxed">
-                  Cuidamos al planeta con prácticas ecofriendly y empaques
-                  responsables.
-                </p>
+            {/* Card 4 */}
+            <div className="bg-white p-8 rounded-2xl shadow-xl text-center transform hover:-translate-y-2 transition-transform duration-300">
+              <div className="flex justify-center items-center mx-auto mb-6 w-20 h-20 bg-blue-100 rounded-full">
+                <FaLeaf className="text-[#13294b]" size={40} />
               </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3 h-14 flex items-center justify-center">
+                Sostenibilidad
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Cuidamos al planeta con prácticas ecofriendly y empaques
+                responsables.
+              </p>
             </div>
           </div>
         </div>
