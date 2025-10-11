@@ -1,3 +1,4 @@
+import { arimo } from "@/lib/fonts";
 import Image from "next/image";
 import {
   FaFacebook,
@@ -8,9 +9,9 @@ import {
 
 export const Footer = () => {
   return (
-    <footer className="bg-primary text-white ">
+    <footer className={`bg-primary text-white  ${arimo.className}`}>
       <div className="max-w-7xl mx-auto flex justify-between items-center ">
-        <div className="flex flex-col items-center gap-y-3">
+        <div className={`flex flex-col items-center gap-y-3 text-secondary`}>
           <h3 className="text-3xl font-semibold">Contáctenos</h3>
           <a href="#" className="flex flex-row gap-x-1.5 items-center">
             <FaPhoneAlt />
@@ -24,7 +25,7 @@ export const Footer = () => {
         </div>
         <div>
           <Image
-            src={"/emozziona-logo.jpg"}
+            src={"/logo-gold.jpeg"}
             alt="Logo de emozziona"
             width={500}
             height={500}

@@ -1,4 +1,4 @@
-import { Montserrat, Cinzel } from "next/font/google";
+import { Montserrat, Cinzel, Arimo } from "next/font/google";
 
 export const montserrat = Montserrat({
   variable: "--font-geist-montserrat",
@@ -8,4 +8,12 @@ export const montserrat = Montserrat({
 export const trajan = Cinzel({
   variable: "--font-geist-cinzel",
   subsets: ["latin"],
+  weight: ["600", "800"],
 });
+
+export const arimo = Arimo({
+  variable: "--font-geist-arimo",
+  subsets: ["latin"],
+});
+
+// export const arimo = Ari

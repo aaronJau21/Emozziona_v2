@@ -1,4 +1,4 @@
-import { montserrat, trajan } from "@/lib/fonts";
+import { trajan } from "@/lib/fonts";
 import Image from "next/image";
 
 const products = [
@@ -19,11 +19,13 @@ export const Product = () => {
       id="productos"
     >
       <h2
-        className={`text-3xl sm:text-4xl text-center text-primary font-semibold ${montserrat.className}`}
+        className={`text-3xl sm:text-4xl text-center text-marron font-bol ${trajan.className}`}
       >
-        Productos
+        Catalogo Corporativo
       </h2>
-      <p className={`text-sm sm:text-base text-center text-marron font-semibold mt-2 ${trajan.className}`}>
+      <p
+        className={`text-sm sm:text-base text-center text-marron font-semibold mt-2 ${trajan.className}`}
+      >
         Descubre nuestros productos más populares
       </p>
 
@@ -40,9 +42,6 @@ export const Product = () => {
               height={500}
               className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-300"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <span className="text-white text-lg font-bold">Ver Producto</span>
-            </div>
           </div>
         ))}
       </div>

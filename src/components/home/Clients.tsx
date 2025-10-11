@@ -28,50 +28,56 @@ export const Clients = () => {
     },
   ];
   return (
-    <section className="py-20 text-center">
-      <div className="container mx-auto">
-        <h2 className="text-4xl font-bold mb-4">Confían en nosotros</h2>
-        <p className="text-lg text-gray-600 mb-12">
-          Grandes marcas confían en Emozziona para transformar sus eventos en
-          experiencias memorables.
-        </p>
+    <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+            Confían en nosotros
+          </h2>
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+            Grandes marcas confían en Emozziona para transformar sus eventos en
+            experiencias memorables.
+          </p>
+        </div>
         <Swiper
           slidesPerView={1}
-          spaceBetween={5}
+          spaceBetween={30}
           autoplay={{
-            delay: 1500,
+            delay: 3000,
             disableOnInteraction: false,
           }}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
+          loop={true}
           modules={[Autoplay]}
-          className="mySwiper"
+          className="clients-swiper"
           breakpoints={{
             640: {
               slidesPerView: 2,
-              spaceBetween: 20,
+              spaceBetween: 30,
             },
             768: {
               slidesPerView: 3,
-              spaceBetween: 40,
+              spaceBetween: 30,
             },
             1024: {
               slidesPerView: 4,
-              spaceBetween: 50,
+              spaceBetween: 40,
             },
           }}
         >
           {clients.map((client, index) => (
             <SwiperSlide key={index}>
-              <div className="flex items-center justify-center h-52">
-                <Image
-                  src={client.src}
-                  alt={client.alt}
-                  width={110}
-                  height={110}
-                />
+              <div className="group">
+                <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-8 h-48 flex items-center justify-center border border-gray-100 hover:border-gray-200 hover:-translate-y-1">
+                  <div className="relative w-full h-full flex items-center justify-center">
+                    <Image
+                      src={client.src}
+                      alt={client.alt}
+                      width={140}
+                      height={140}
+                      className="object-contain transition-transform duration-300 group-hover:scale-110"
+                    />
+                  </div>
+                </div>
               </div>
             </SwiperSlide>
           ))}
