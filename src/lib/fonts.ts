@@ -15,5 +15,3 @@ export const arimo = Arimo({
   variable: "--font-geist-arimo",
   subsets: ["latin"],
 });
-
-// export const arimo = Ari

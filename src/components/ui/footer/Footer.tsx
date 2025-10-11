@@ -36,7 +36,7 @@ export const Footer = () => {
           <h3 className="text-3xl font-semibold">Síguenos</h3>
 
           <a
-            href="https://www.instagram.com/emozziona/"
+            href="https://web.facebook.com/emozziona"
             target="_blank"
             className="flex flex-row items-center gap-x-1.5"
           >
@@ -44,7 +44,7 @@ export const Footer = () => {
             Facebook
           </a>
           <a
-            href="https://web.facebook.com/emozziona"
+            href="https://www.instagram.com/emozziona/"
             target="_blank"
             className="flex flex-row items-center gap-x-1.5"
           >

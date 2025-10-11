@@ -1,18 +1,18 @@
-import { trajan } from "@/lib/fonts";
+import { arimo } from "@/lib/fonts";
 import Image from "next/image";
 import React from "react";
 
 export const Main = () => {
   return (
     <>
-      <main className="hidden md:block relative h-[90vh] xl:h-[95vh] bg-[url(/home/main-mobile.png)] bg-cover bg-center">
+      <main className="hidden md:block relative h-[90vh] xl:h-[95vh] bg-[url(/home/main-mobile.webp)] bg-cover bg-center">
         {/* Overlay con degradado para mejorar la legibilidad del texto */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/30 to-transparent" />
 
         <div className="relative z-10 h-full flex flex-col items-center  text-white text-center px-4">
           <div className="max-w-4xl animate-fade-in-up absolute top-36">
             <h1
-              className={`text-4xl lg:text-6xl font-bold leading-tight drop-shadow-lg ${trajan.className}`}
+              className={`text-4xl lg:text-6xl font-bold leading-tight drop-shadow-lg ${arimo.className}`}
             >
               Regalos Personalizados para Momentos Inolvidables
             </h1>
