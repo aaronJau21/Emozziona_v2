@@ -1,18 +1,40 @@
+"use client";
+
 import { trajan } from "@/lib/fonts";
 import Image from "next/image";
+import { useMemo, useState } from "react";
 
-const products = [
-  { src: "/home/1.png", alt: "Producto 1" },
-  { src: "/home/2.png", alt: "Producto 2" },
-  { src: "/home/3.png", alt: "Producto 3" },
-  { src: "/home/4.png", alt: "Producto 4" },
-  { src: "/home/5.png", alt: "Producto 5" },
-  { src: "/home/6.png", alt: "Producto 6" },
-  { src: "/home/7.png", alt: "Producto 7" },
-  { src: "/home/8.png", alt: "Producto 8" },
-];
+type Category = "global" | "corporativo" | "casual" | "universitario";
 
 export const Product = () => {
+  const estilosBotonesBase =
+    "px-8 py-3 bg-transparent border-2 border-marron text-marron font-semibold rounded-full transition-all duration-300 ease-in-out cursor-pointer";
+  const estilosBotonesHover = "hover:bg-marron hover:text-white";
+
+  const [category, setCategory] = useState<Category>("global");
+
+  // Lista completa de imágenes
+  const allImages: string[] = [
+    "/home/casual/1.png",
+    "/home/casual/2.png",
+    "/home/corporativo/1.png",
+    "/home/universitario/1.png",
+  ];
+
+  // Imágenes filtradas por categoría
+  const filteredImages = useMemo(() => {
+    if (category === "global") return allImages;
+    const prefix = `/home/${category}/`;
+    return allImages.filter((src) => src.startsWith(prefix));
+  }, [category, allImages]);
+
+  const buttonClass = (cat: Category) =>
+    [
+      estilosBotonesBase,
+      estilosBotonesHover,
+      category === cat ? "bg-marron text-primary" : "",
+    ].join(" ");
+
   return (
     <section
       className="max-w-7xl mx-auto my-10 px-4 sm:px-6 lg:px-8"
@@ -21,29 +43,57 @@ export const Product = () => {
       <h2
         className={`text-3xl sm:text-4xl text-center text-marron font-bol ${trajan.className}`}
       >
-        Catalogo Corporativo
+        Productos más populares
       </h2>
-      <p
-        className={`text-sm sm:text-base text-center text-marron font-semibold mt-2 ${trajan.className}`}
-      >
-        Descubre nuestros productos más populares
-      </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-8">
-        {products.map((product, index) => (
-          <div
-            key={index}
-            className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
-          >
-            <Image
-              src={product.src}
-              alt={product.alt}
-              width={500}
-              height={500}
-              className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-300"
-            />
+      <div className="flex justify-center items-center gap-4 my-8">
+        <button
+          className={buttonClass("corporativo")}
+          onClick={() => setCategory("corporativo")}
+        >
+          Corporativo
+        </button>
+        <button
+          className={buttonClass("casual")}
+          onClick={() => setCategory("casual")}
+        >
+          Casual
+        </button>
+        <button
+          className={buttonClass("universitario")}
+          onClick={() => setCategory("universitario")}
+        >
+          Universitario
+        </button>
+        <button
+          className={buttonClass("global")}
+          onClick={() => setCategory("global")}
+        >
+          Ver todos
+        </button>
+      </div>
+
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-8">
+        {filteredImages.length === 0 ? (
+          <div className="col-span-full text-center text-marron/70">
+            No hay imágenes para esta categoría.
           </div>
-        ))}
+        ) : (
+          filteredImages.map((src, index) => (
+            <div
+              key={src}
+              className="group relative overflow-hidden rounded-lg shadow-md transition-all duration-300 ease-in-out hover:shadow-2xl"
+            >
+              <Image
+                src={src}
+                alt={`Producto de Emozziona ${index + 1}`}
+                width={500}
+                height={500}
+                className="h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+              />
+            </div>
+          ))
+        )}
       </div>
     </section>
   );
