@@ -4,7 +4,12 @@ import { trajan } from "@/lib/fonts";
 import Image from "next/image";
 import { useMemo, useState } from "react";
 
-type Category = "global" | "corporativo" | "casual" | "merchandising";
+type Category =
+  | "global"
+  | "corporativo"
+  | "personales"
+  | "merchandising"
+  | "echo_mano";
 
 export const Product = () => {
   const estilosBotonesBase =
@@ -15,14 +20,18 @@ export const Product = () => {
 
   // Lista completa de imágenes
   const allImages: string[] = [
-    "/home/casual/1.png",
-    "/home/casual/2.png",
+    "/home/personales/1.png",
+    "/home/personales/2.png",
+    "/home/personales/3.png",
+    "/home/personales/4.png",
     "/home/corporativo/1.png",
     "/home/corporativo/2.png",
     "/home/corporativo/3.png",
     "/home/corporativo/4.png",
     "/home/merchandising/1.png",
     "/home/merchandising/2.png",
+    "/home/merchandising/3.png",
+    "/home/echo_mano/1.png",
   ];
 
   // Imágenes filtradas por categoría
@@ -58,16 +67,22 @@ export const Product = () => {
           Corporativo
         </button>
         <button
-          className={buttonClass("casual")}
-          onClick={() => setCategory("casual")}
+          className={buttonClass("personales")}
+          onClick={() => setCategory("personales")}
         >
-          Casual
+          Personales
         </button>
         <button
           className={buttonClass("merchandising")}
           onClick={() => setCategory("merchandising")}
         >
           Merchandising
+        </button>
+        <button
+          className={buttonClass("echo_mano")}
+          onClick={() => setCategory("echo_mano")}
+        >
+          Echo a mano
         </button>
         <button
           className={buttonClass("global")}
