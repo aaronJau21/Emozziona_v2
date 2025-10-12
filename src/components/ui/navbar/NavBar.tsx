@@ -23,15 +23,15 @@ export const NavBar = () => {
   }, [isHome]);
 
   const headerClasses = isHome
-    ? `fixed top-0 z-50 w-full transition-all duration-300 ease-in-out ${
+    ? `fixed top-0 z-50 w-full transition-all duration-300 ease-in-out  ${
         scrolled ? "bg-black/50 py-5" : "bg-transparent py-3"
       }`
     : "relative bg-black/50 py-5";
 
   return (
-    <header className={headerClasses}>
+    <header className={`${headerClasses}`}>
       <div className="max-w-7xl mx-auto flex flex-row justify-between items-center px-5">
-        <Link href={"/"} className="flex flex-row items-center gap-x-3">
+        <Link href={"/"} className="flex flex-row items-center gap-x-3 ">
           <Image
             src={"/emozziona-logo.jpg"}
             alt="Logo de Emozziona"
@@ -47,18 +47,18 @@ export const NavBar = () => {
         </Link>
 
         <nav className="flex flex-row gap-x-3.5 text-white">
-          <Link href={"/"} className={`${montserrat.className} cursor-pointer`}>
+          <Link href={"/"} className={`${montserrat.className} cursor-pointer text-xl`}>
             Inicio
           </Link>
           <Link
             href={"/about"}
-            className={`${montserrat.className} cursor-pointer`}
+            className={`${montserrat.className} cursor-pointer text-xl`}
           >
             Nosotros
           </Link>
           <Link
             href={"/history"}
-            className={`${montserrat.className} cursor-pointer`}
+            className={`${montserrat.className} cursor-pointer text-xl`}
           >
             Historia
           </Link>

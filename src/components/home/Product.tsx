@@ -4,7 +4,7 @@ import { trajan } from "@/lib/fonts";
 import Image from "next/image";
 import { useMemo, useState } from "react";
 
-type Category = "global" | "corporativo" | "casual" | "universitario";
+type Category = "global" | "corporativo" | "casual" | "merchandising";
 
 export const Product = () => {
   const estilosBotonesBase =
@@ -18,7 +18,11 @@ export const Product = () => {
     "/home/casual/1.png",
     "/home/casual/2.png",
     "/home/corporativo/1.png",
-    "/home/universitario/1.png",
+    "/home/corporativo/2.png",
+    "/home/corporativo/3.png",
+    "/home/corporativo/4.png",
+    "/home/merchandising/1.png",
+    "/home/merchandising/2.png",
   ];
 
   // Imágenes filtradas por categoría
@@ -60,10 +64,10 @@ export const Product = () => {
           Casual
         </button>
         <button
-          className={buttonClass("universitario")}
-          onClick={() => setCategory("universitario")}
+          className={buttonClass("merchandising")}
+          onClick={() => setCategory("merchandising")}
         >
-          Universitario
+          Merchandising
         </button>
         <button
           className={buttonClass("global")}

@@ -75,9 +75,9 @@ export const HeroHistory = () => {
             </h4>
             <div className="border-t border-gray-300 pt-3">
               <p className="text-gray-700 italic">
-                "Sentia que faltaba ese toque personal, ese algo que hiciera que
+                &quot;Sentia que faltaba ese toque personal, ese algo que hiciera que
                 la otra persona sintiera que el obsequio habia sido pensado solo
-                para ella/el."
+                para ella/el.&quot;
               </p>
               <h2 className="mt-4 text-sm font-semibold text-gray-800">
                 Justina Martinez <br />{" "}
