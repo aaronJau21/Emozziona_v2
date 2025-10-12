@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { AboutPageSchema, BreadcrumbSchema, HeroHistory } from "@/components";
+import { PropositoHistory } from "@/components/history/PropositoHistory";
 
 export const metadata: Metadata = {
   title: "Nuestra Historia",
@@ -42,73 +43,7 @@ export default function HistoryPage() {
       <HeroHistory />
 
       {/* VALUE PROPOSITION */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Nuestra Garantía: Regalos que Dejan Huella
-            </h2>
-            <p className="text-lg text-gray-600">
-              Más que productos, creamos experiencias. Así es como aseguramos
-              que cada regalo genere recordación y lealtad.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8">
-            {/* Card 1 */}
-            <div className="group bg-gray-50 p-8 rounded-2xl shadow-sm ring-1 ring-primary/10 hover:shadow-lg hover:ring-primary/20 transition-all duration-300">
-              <h3 className="font-semibold text-xl text-primary mb-3 flex items-center gap-2">
-                <span className="inline-block h-2.5 w-2.5 rounded-full bg-secondary" />
-                Diseño con Intención
-              </h3>
-              <p className="text-gray-700">
-                No es solo un logo impreso; es entender la historia de tu marca
-                y plasmarla en un objeto útil y hermoso que genera afinidad con
-                quien lo recibe.
-              </p>
-            </div>
-
-            {/* Card 2 */}
-            <div className="group bg-gray-50 p-8 rounded-2xl shadow-sm ring-1 ring-primary/10 hover:shadow-lg hover:ring-primary/20 transition-all duration-300">
-              <h3 className="font-semibold text-xl text-primary mb-3 flex items-center gap-2">
-                <span className="inline-block h-2.5 w-2.5 rounded-full bg-secondary" />
-                Maestría en el Detalle
-              </h3>
-              <p className="text-gray-700">
-                Nuestra obsesión por el packaging y la presentación asegura una
-                experiencia inolvidable. Cada detalle está pensado para traducir
-                tu inversión en un {"WOW"} inmediato.
-              </p>
-            </div>
-
-            {/* Card 3 */}
-            <div className="group bg-gray-50 p-8 rounded-2xl shadow-sm ring-1 ring-primary/10 hover:shadow-lg hover:ring-primary/20 transition-all duration-300">
-              <h3 className="font-semibold text-xl text-primary mb-3 flex items-center gap-2">
-                <span className="inline-block h-2.5 w-2.5 rounded-full bg-secondary" />
-                Compromiso Emocional
-              </h3>
-              <p className="text-gray-700">
-                No vendemos productos, invertimos en momentos de alegría,
-                gratitud y motivación para tu equipo y clientes. El efecto
-                emocional es nuestro principal objetivo.
-              </p>
-            </div>
-
-            {/* Card 4 */}
-            <div className="group bg-gray-50 p-8 rounded-2xl shadow-sm ring-1 ring-primary/10 hover:shadow-lg hover:ring-primary/20 transition-all duration-300">
-              <h3 className="font-semibold text-xl text-primary mb-3 flex items-center gap-2">
-                <span className="inline-block h-2.5 w-2.5 rounded-full bg-secondary" />
-                Calidad que Inspira Confianza
-              </h3>
-              <p className="text-gray-700">
-                Un regalo de alta calidad es una extensión del prestigio de tu
-                empresa. Garantizamos que cada producto refuerce la confianza y
-                coherencia de tu marca.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <PropositoHistory />
 
       {/* CTA */}
       <section className="bg-secondary text-white py-16 md:py-24">
