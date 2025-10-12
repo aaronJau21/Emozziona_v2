@@ -1,4 +1,4 @@
-import { arimo, popping, trajan } from "@/lib/fonts";
+import { arimo, montserrat, popping, trajan } from "@/lib/fonts";
 import Image from "next/image";
 
 export const HeroHistory = () => {
@@ -16,18 +16,21 @@ export const HeroHistory = () => {
             />
           </div>
           <p
-            className={`text-center mt-4 text-lg md:text-xl text-gray-600 ${trajan.className}`}
+            className={`text-center mt-4 text-lg md:text-2xl text-gray-600 ${trajan.className}`}
           >
-            Donde un detalle se vuelve un recuerdo
+            Justina Martinez <br />{" "}
+            <span className={`font-normal text-base ${popping.className}`}>
+              Fundadora de EMOZZIONA
+            </span>
           </p>
         </div>
         <div className="w-full lg:w-3/5 text-center lg:text-left">
           <h1
-            className={`text-4xl md:text-6xl text-primary font-semibold ${trajan.className}`}
+            className={`text-4xl md:text-6xl text-primary font-semibold ${montserrat.className}`}
           >
-            Nuestra historia: <br />
-            <span className="italic text-2xl md:text-5xl ">
-              Pasion por el detalle
+            Nuestra historia <br />
+            <span className={`italic text-xl font-bold`}>
+              Tranformar el acto de regalar a un momento extraordinario
             </span>
           </h1>
           <p
@@ -45,7 +48,7 @@ export const HeroHistory = () => {
             <h3
               className={`text-2xl font-bold text-primary mb-2 ${trajan.className}`}
             >
-              2021
+              2022
             </h3>
             <h4
               className={`text-xl font-semibold text-secondary mb-3 ${arimo.className}`}
@@ -54,10 +57,12 @@ export const HeroHistory = () => {
             </h4>
             <div className="border-t border-gray-300 pt-3">
               <p className="text-gray-700">
-                Hace dos años, Justina Martinez, fundadora de{" "}
-                <span className="font-bold">Emozziona</span>, tuvo una
-                revelacion; en un mundo lleno de obsequios funcionales, sentia
-                que los regalos habian perdido su magia.
+                Hace tres años tuve una revelación: en un mundo lleno de objetos
+                funcionales, los regalos habían perdido su magia, se habían
+                convertido en una simple transacción y no en un recuerdo que se
+                ate. Sentía que faltaba ese toque personal, ese “algo” que
+                hiciera que la otra persona sintiera que el obsequio había sido
+                pensado y creado solo para ella.
               </p>
             </div>
           </div>
@@ -75,14 +80,12 @@ export const HeroHistory = () => {
             </h4>
             <div className="border-t border-gray-300 pt-3">
               <p className="text-gray-700 italic">
-                &quot;Sentia que faltaba ese toque personal, ese algo que hiciera que
-                la otra persona sintiera que el obsequio habia sido pensado solo
-                para ella/el.&quot;
+                Así nació EMOZZIONA. No para vender merchandising, sino para
+                solucionar un problema emocional y la falta de memoria en el
+                mundo corporativo y personal. Creemos firmemente que un regalo
+                tiene el poder de comunicar más que mil palabras, un regalo
+                genera emociones y una profunda conexión Nuestra filosofía
               </p>
-              <h2 className="mt-4 text-sm font-semibold text-gray-800">
-                Justina Martinez <br />{" "}
-                <span className="font-normal">Fundadora de EMOZZIONA</span>
-              </h2>
             </div>
           </div>
 
@@ -99,9 +102,12 @@ export const HeroHistory = () => {
             </h4>
             <div className="border-t border-gray-300 pt-3">
               <p className="text-gray-700">
-                Crear experiencias memorables era nuestra nueva mision: hacer
-                que cada reagalo fortaleciera los lazos con gratitud, cuidado y
-                una conexion unica.
+                Desde la fundación de Emozziona en el año 2022 teníamos una idea
+                clara, que un regalo es mucho más que dar un objeto, regalar es
+                un gesto que genera emociones, como sonrisas, abrazos y
+                recuerdos que perduran. Nacimos con el propósito de emocionar a
+                las personas, combinando la calidad, creatividad y un estilo
+                auténtico, dejando una huella positiva en el mundo.
               </p>
             </div>
           </div>

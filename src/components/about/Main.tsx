@@ -83,7 +83,7 @@ export const MainAbout = () => {
       </section>
 
       {/* Propuesta Única de Valor */}
-      <section className="bg-slate-50 py-20 sm:py-24 px-4 sm:px-6 lg:px-8">
+      <section className=" py-20 sm:py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <h2 className={`text-4xl sm:text-5xl font-bold text-center text-[#13294b] mb-16 ${trajan.className}`}>
             Propuesta Única de Valor

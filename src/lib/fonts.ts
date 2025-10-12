@@ -20,5 +20,5 @@ export const arimo = Arimo({
 export const popping = Poppins({
   variable: "--font-geist-poppins",
   subsets: ["latin"],
-  weight: ["200", "500", "800"],
+  weight: ["100", "200", "500", "800"],
 });
