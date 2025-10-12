@@ -1,6 +1,5 @@
-import Image from "next/image";
 import { Metadata } from "next";
-import { AboutPageSchema, BreadcrumbSchema } from "@/components";
+import { AboutPageSchema, BreadcrumbSchema, HeroHistory } from "@/components";
 
 export const metadata: Metadata = {
   title: "Nuestra Historia",
@@ -40,101 +39,7 @@ export default function HistoryPage() {
       <BreadcrumbSchema items={breadcrumbItems} />
 
       {/* HERO / INTRO */}
-      <section
-        aria-labelledby="historia-heading"
-        className="relative isolate overflow-hidden bg-gradient-to-b from-primary/5 via-white to-white text-gray-800 pt-24 md:pt-32"
-      >
-        {/* Decorative background accents */}
-        <div
-          aria-hidden
-          className="pointer-events-none absolute -top-24 right-0 -z-10 h-64 w-64 rounded-full bg-secondary/30 blur-3xl md:blur-[90px]"
-        />
-        <div
-          aria-hidden
-          className="pointer-events-none absolute -bottom-16 -left-16 -z-10 h-72 w-72 rounded-full bg-primary/20 blur-3xl md:blur-[90px]"
-        />
-
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16">
-            <h1
-              id="historia-heading"
-              className="text-4xl md:text-5xl font-extrabold tracking-tight text-primary mb-4"
-            >
-              Nuestra historia: Pasión por el detalle
-            </h1>
-            <p className="text-lg md:text-xl text-gray-600">
-              Descubre cómo Emozziona nació de la visión de una mujer que quiso
-              devolverle el alma a los regalos.
-            </p>
-            <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-secondary/80" />
-          </div>
-
-          <div className="grid md:grid-cols-5 gap-8 md:gap-12 items-center">
-            <div className="md:col-span-3 order-2 md:order-1">
-              <h2 className="text-2xl md:text-3xl font-semibold text-secondary mb-6">
-                De la idea a la acción: Un viaje de propósito
-              </h2>
-              <div className="space-y-6 text-primary leading-relaxed text-justify">
-                <p>
-                  Hace dos años, Justina Martínez, fundadora de Emozziona, tuvo
-                  una revelación: en un mundo lleno de objetos funcionales, los
-                  regalos habían perdido su magia. Se habían convertido en una
-                  simple transacción, no en un recuerdo que se atesora.
-                </p>
-                <p>
-                  Ella creía firmemente que un regalo tiene el poder de
-                  comunicar más que mil palabras: gratitud, compromiso y una
-                  profunda conexión.
-                </p>
-                <blockquote className="relative border-l-4 border-secondary pl-6 py-4 text-lg italic text-gray-600 bg-white/70 backdrop-blur rounded-r-lg shadow-sm">
-                  <span className="absolute -left-2 -top-2 h-3 w-3 rounded-full bg-secondary" />
-                  “Sentía que faltaba ese toque personal, ese ‘algo’ que hiciera
-                  que la otra persona sintiera que ese objeto había sido pensado
-                  solo para ella.”
-                  <cite className="block font-semibold mt-4 not-italic text-primary">
-                    – Justina Martínez, Fundadora de EMOZZIONA
-                  </cite>
-                </blockquote>
-                <p>
-                  Así nació EMOZZIONA. No para vender merchandising, sino para
-                  solucionar un problema emocional: la falta de memoria en el
-                  mundo corporativo y personal.
-                </p>
-                <p className="font-bold text-secondary text-xl">
-                  Nuestra misión: Hacer que cada regalo sea memorable.
-                </p>
-              </div>
-            </div>
-
-            <div className="md:col-span-2 order-1 md:order-2 flex justify-center">
-              <figure className="relative">
-                <div className="relative w-64 h-64 md:w-80 md:h-80">
-                  <div
-                    aria-hidden
-                    className="absolute inset-0 -z-10 rounded-2xl bg-gradient-to-tr from-secondary/20 to-primary/30 blur-2xl"
-                  />
-                  <Image
-                    src={"/hisstory/duenia.jpeg"}
-                    alt="Justina Martínez, fundadora de Emozziona"
-                    fill
-                    sizes="(min-width: 768px) 20rem, 16rem"
-                    priority
-                    className="rounded-2xl object-cover shadow-xl ring-1 ring-black/5"
-                  />
-                </div>
-                <figcaption className="sr-only">
-                  Retrato de la fundadora de Emozziona, Justina Martínez.
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>
-
-        {/* Divider */}
-        <div className="container mx-auto px-4 md:px-6 mt-16 md:mt-24">
-          <div className="h-px w-full bg-gradient-to-r from-transparent via-primary/10 to-transparent" />
-        </div>
-      </section>
+      <HeroHistory />
 
       {/* VALUE PROPOSITION */}
       <section className="py-16 md:py-24 bg-white">
@@ -157,9 +62,9 @@ export default function HistoryPage() {
                 Diseño con Intención
               </h3>
               <p className="text-gray-700">
-                No es solo un logo impreso; es entender la historia de tu
-                marca y plasmarla en un objeto útil y hermoso que genera
-                afinidad con quien lo recibe.
+                No es solo un logo impreso; es entender la historia de tu marca
+                y plasmarla en un objeto útil y hermoso que genera afinidad con
+                quien lo recibe.
               </p>
             </div>
 
@@ -170,9 +75,9 @@ export default function HistoryPage() {
                 Maestría en el Detalle
               </h3>
               <p className="text-gray-700">
-                Nuestra obsesión por el packaging y la presentación asegura
-                una experiencia inolvidable. Cada detalle está pensado para
-                traducir tu inversión en un {"WOW"} inmediato.
+                Nuestra obsesión por el packaging y la presentación asegura una
+                experiencia inolvidable. Cada detalle está pensado para traducir
+                tu inversión en un {"WOW"} inmediato.
               </p>
             </div>
 
@@ -197,8 +102,8 @@ export default function HistoryPage() {
               </h3>
               <p className="text-gray-700">
                 Un regalo de alta calidad es una extensión del prestigio de tu
-                empresa. Garantizamos que cada producto refuerce la confianza
-                y coherencia de tu marca.
+                empresa. Garantizamos que cada producto refuerce la confianza y
+                coherencia de tu marca.
               </p>
             </div>
           </div>
@@ -214,8 +119,8 @@ export default function HistoryPage() {
           <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8 opacity-95">
             Hoy, EMOZZIONA es el socio ideal para empresas que, como la tuya,
             saben que la verdadera conexión se construye a través de los
-            detalles. Asegura que tu próximo regalo no solo sea entregado,
-            sino recordado y presumido.
+            detalles. Asegura que tu próximo regalo no solo sea entregado, sino
+            recordado y presumido.
           </p>
           <a
             href="/contact"

@@ -70,7 +70,7 @@ export const Clients = () => {
           {clients.map((client, index) => (
             <SwiperSlide key={index}>
               <div className="group">
-                <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-8 h-48 flex items-center justify-center border border-gray-100 hover:border-gray-200 hover:-translate-y-1">
+                <div className=" rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-8 h-48 flex items-center justify-center border border-gray-100 hover:border-gray-200 hover:-translate-y-1">
                   <div className="relative w-full h-full flex items-center justify-center">
                     <Image
                       src={client.src}

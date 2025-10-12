@@ -14,4 +14,5 @@ export const trajan = Cinzel({
 export const arimo = Arimo({
   variable: "--font-geist-arimo",
   subsets: ["latin"],
+  weight: ["600", "700"],
 });
