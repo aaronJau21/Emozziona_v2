@@ -1,4 +1,4 @@
-import { arimo, trajan } from "@/lib/fonts";
+import { arimo, popping, trajan } from "@/lib/fonts";
 import Image from "next/image";
 
 export const HeroHistory = () => {
@@ -26,11 +26,13 @@ export const HeroHistory = () => {
             className={`text-4xl md:text-6xl text-primary font-semibold ${trajan.className}`}
           >
             Nuestra historia: <br />
-            <span className="italic text-3xl md:text-5xl">
+            <span className="italic text-2xl md:text-5xl ">
               Pasion por el detalle
             </span>
           </h1>
-          <p className={`mt-4 text-base md:text-lg text-primary ${arimo.className}`}>
+          <p
+            className={`mt-4 text-base md:text-lg text-primary ${popping.className} `}
+          >
             Descubre como Emozziona nacio de la vision de una mujer que quiso
             devolver el alma a los regalos.
           </p>
