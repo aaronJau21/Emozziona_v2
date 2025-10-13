@@ -47,8 +47,17 @@ export const NavBar = () => {
         </Link>
 
         <nav className="flex flex-row gap-x-3.5 text-white">
-          <Link href={"/"} className={`${montserrat.className} cursor-pointer text-xl`}>
+          <Link
+            href={"/"}
+            className={`${montserrat.className} cursor-pointer text-xl`}
+          >
             Inicio
+          </Link>
+          <Link
+            href={"/categories"}
+            className={`${montserrat.className} cursor-pointer text-xl`}
+          >
+            Productos
           </Link>
           <Link
             href={"/about"}

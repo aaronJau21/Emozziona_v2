@@ -32,6 +32,9 @@ export const Product = () => {
     "/home/merchandising/2.png",
     "/home/merchandising/3.png",
     "/home/echo_mano/1.png",
+    // "/home/echo_mano/2.png",
+    "/home/echo_mano/3.png",
+    "/home/echo_mano/4.png",
   ];
 
   // Imágenes filtradas por categoría
@@ -54,7 +57,7 @@ export const Product = () => {
       id="productos"
     >
       <h2
-        className={`text-3xl sm:text-4xl text-center text-marron font-bol ${trajan.className}`}
+        className={`text-3xl sm:text-4xl text-center text-marron font-bol font-tthove`}
       >
         Productos más populares
       </h2>
@@ -92,7 +95,7 @@ export const Product = () => {
         </button>
       </div>
 
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-8">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-8">
         {filteredImages.length === 0 ? (
           <div className="col-span-full text-center text-marron/70">
             No hay imágenes para esta categoría.
@@ -101,13 +104,13 @@ export const Product = () => {
           filteredImages.map((src, index) => (
             <div
               key={src}
-              className="group relative overflow-hidden rounded-lg shadow-md transition-all duration-300 ease-in-out hover:shadow-2xl"
+              className="group relative overflow-hidden rounded-4xl shadow-md transition-all duration-300 ease-in-out hover:shadow-2xl border-8 border-white"
             >
               <Image
                 src={src}
                 alt={`Producto de Emozziona ${index + 1}`}
-                width={500}
-                height={500}
+                width={900}
+                height={900}
                 className="h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
               />
             </div>

@@ -32,7 +32,7 @@ export const MainAbout = () => {
               alt="Nuestra Misión"
               width={500}
               height={300}
-              className="rounded-lg object-cover"
+              className="rounded-4xl object-cover"
             />
           </div>
         </div>
@@ -59,7 +59,7 @@ export const MainAbout = () => {
               alt="Nuestra Visión"
               width={500}
               height={300}
-              className="rounded-lg object-cover"
+              className="rounded-4xl object-cover"
             />
           </div>
         </div>

@@ -1,13 +1,20 @@
+@font-face {
+  font-family: tthove;
+  src: url("/fonts/tt_hoves_pro/TT\ Hoves\ Pro\ Trial\ Condensed\ DemiBold.ttf");
+
+}
+
 @import "tailwindcss";
 
 @theme {
   --color-primary: #13294b;
   --color-secondary: #e8a54d;
   --color-marron: #b25b12;
+  --font-tthove: tthove, "sans-serif";
 }
 
 body {
-  background: #FBF5F0;
+  background: #f2f2f2;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
