@@ -36,12 +36,14 @@ export const HeroHistory = () => {
           <p
             className={`mt-4 text-base md:text-lg text-primary ${popping.className} `}
           >
-            Descubre como Emozziona nacio de la vision de una mujer que quiso
-            devolver el alma a los regalos.
+            En Emozziona creemos que un detalle puede decir más que mil
+            palabras: gratitud, cercanía y propósito.
           </p>
         </div>
       </div>
-
+      <h2 className="my-16 text-xl italic text-primary">
+        Tres hitos que explican cómo convertimos un regalo en un recuerdo.
+      </h2>
       <div className="mt-16 md:mt-24">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
           <div className="flex flex-col items-center text-center">
@@ -53,38 +55,16 @@ export const HeroHistory = () => {
             <h4
               className={`text-xl font-semibold text-secondary mb-3 ${arimo.className}`}
             >
-              La idea nace
+              La chispa
             </h4>
             <div className="border-t border-gray-300 pt-3">
-              <p className="text-gray-700">
-                Hace tres años tuve una revelación: en un mundo lleno de objetos
-                funcionales, los regalos habían perdido su magia, se habían
-                convertido en una simple transacción y no en un recuerdo que se
-                ate. Sentía que faltaba ese toque personal, ese “algo” que
-                hiciera que la otra persona sintiera que el obsequio había sido
-                pensado y creado solo para ella.
+              <p className="text-xl font-bold text-primary">
+                Volver al sentido del regalo
               </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center text-center">
-            <h3
-              className={`text-2xl font-bold text-primary mb-2 ${trajan.className}`}
-            >
-              2022
-            </h3>
-            <h4
-              className={`text-xl font-semibold text-secondary mb-3 ${arimo.className}`}
-            >
-              El detalle toma forma
-            </h4>
-            <div className="border-t border-gray-300 pt-3">
-              <p className="text-gray-700 italic">
-                Así nació EMOZZIONA. No para vender merchandising, sino para
-                solucionar un problema emocional y la falta de memoria en el
-                mundo corporativo y personal. Creemos firmemente que un regalo
-                tiene el poder de comunicar más que mil palabras, un regalo
-                genera emociones y una profunda conexión Nuestra filosofía
+              <p className="text-primary text-lg">
+                Descubrimos que muchos regalos se habían vuelto una simple
+                transacción. Decidimos crear detalles con significado, pensados
+                para la persona que los recibe.
               </p>
             </div>
           </div>
@@ -98,16 +78,39 @@ export const HeroHistory = () => {
             <h4
               className={`text-xl font-semibold text-secondary mb-3 ${arimo.className}`}
             >
-              El proposito se multiplica
+              Del detalle al método
             </h4>
             <div className="border-t border-gray-300 pt-3">
-              <p className="text-gray-700">
-                Desde la fundación de Emozziona en el año 2022 teníamos una idea
-                clara, que un regalo es mucho más que dar un objeto, regalar es
-                un gesto que genera emociones, como sonrisas, abrazos y
-                recuerdos que perduran. Nacimos con el propósito de emocionar a
-                las personas, combinando la calidad, creatividad y un estilo
-                auténtico, dejando una huella positiva en el mundo.
+              <p className="text-xl font-bold text-primary">
+                Del detalle a la experiencia
+              </p>
+              <p className="text-primary text-lg">
+                Diseñamos un proceso: Elección de piezas útiles, mensajes con
+                propósito y empaques que provocan un WOW auténtico. Las primeras
+                empresas confiaron en nosotros.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-col items-center text-center">
+            <h3
+              className={`text-2xl font-bold text-primary mb-2 ${trajan.className}`}
+            >
+              2024
+            </h3>
+            <h4
+              className={`text-xl font-semibold text-secondary mb-3 ${arimo.className}`}
+            >
+              Propósito que crece
+            </h4>
+            <div className="border-t border-gray-300 pt-3">
+              <p className="text-xl font-bold text-primary">
+                Recuerdos que perduran
+              </p>
+              <p className="text-primary text-lg">
+                Perfeccionamos la experiencia completa: desde la historia detrás
+                de cada pieza hasta un embalaje memorable y coherente con la
+                marca. Hoy seguimos creando recuerdos que perduran.
               </p>
             </div>
           </div>

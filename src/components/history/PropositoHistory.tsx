@@ -4,9 +4,7 @@ export const PropositoHistory = () => {
       <div className="container mx-auto px-6">
         {/* Encabezado */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <p className="text-sm font-semibold text-gray-500 tracking-wide mb-2">
-            EMOZZIONA
-          </p>
+          
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
             Pilares que convierten un regalo en un recuerdo
           </h2>
