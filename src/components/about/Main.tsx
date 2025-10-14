@@ -16,11 +16,11 @@ export const MainAbout = () => {
         <div className="flex flex-col md:flex-row items-center gap-8 mt-4">
           <div className="w-full md:w-1/2">
             <p
-              className={`text-lg text-gray-700 leading-relaxed ${montserrat.className}`}
+              className={`text-xl font-semibold text-gray-700 leading-relaxed ${montserrat.className}`}
             >
               Nuestra misión es brindar experiencias memorables a través de
               regalos de calidad que transmitan gratitud, cercanía y valor en
-              cada detalle. Buscamos fortalecer las relaciones entre empresas,
+              cada detalle, buscamos fortalecer las relaciones entre empresas,
               colaboradores y clientes, creando momentos únicos para celebrar,
               disfrutar y conectar de manera auténtica y con conciencia
               ambiental.
@@ -30,7 +30,7 @@ export const MainAbout = () => {
             <Image
               src="/about/vision.png"
               alt="Nuestra Misión"
-              width={500}
+              width={450}
               height={300}
               className="rounded-4xl object-cover"
             />
@@ -46,18 +46,24 @@ export const MainAbout = () => {
         <div className="flex flex-col md:flex-row-reverse items-center gap-8 mt-4">
           <div className="w-full md:w-1/2">
             <p
-              className={`text-lg text-gray-700 leading-relaxed ${montserrat.className}`}
+              className={`text-lg text-gray-700 font-semibold leading-relaxed ${montserrat.className}`}
             >
-              Ser una empresa líder en Lima y referente en Perú, reconocida por
+              Ser una empresa líder en lima y referente en Perú reconocida por
               transformar el acto de regalar en un momento extraordinario,
-              innovador y con compromiso ecofriendly.
+              innovador y con compromiso ecofriendly. Nuestra filosofía Desde la
+              fundación de Emozziona en el año 2022 teníamos una idea clara, que
+              un regalo es mucho más que dar un objeto, regalar es un gesto que
+              genera emociones, como sonrisas, abrazos y recuerdos que perduran.
+              Nacimos con el propósito de emocionar a las personas, combinando
+              la calidad, creatividad y un estilo auténtico, dejando una huella
+              positiva en el mundo.
             </p>
           </div>
           <div className="w-full md:w-1/2">
             <Image
               src="/about/mision.png"
               alt="Nuestra Visión"
-              width={500}
+              width={450}
               height={300}
               className="rounded-4xl object-cover"
             />
@@ -85,7 +91,9 @@ export const MainAbout = () => {
       {/* Propuesta Única de Valor */}
       <section className=" py-20 sm:py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <h2 className={`text-4xl sm:text-5xl font-bold text-center text-[#13294b] mb-16 ${trajan.className}`}>
+          <h2
+            className={`text-4xl sm:text-5xl font-bold text-center text-[#13294b] mb-16 ${trajan.className}`}
+          >
             Propuesta Única de Valor
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -94,12 +102,14 @@ export const MainAbout = () => {
               <div className="flex justify-center items-center mx-auto mb-6 w-20 h-20 bg-blue-100 rounded-full">
                 <FaGift className="text-[#13294b]" size={40} />
               </div>
-              <h3 className={`text-xl font-semibold text-gray-900 mb-3 h-14 flex items-center justify-center ${montserrat.className} mb-5`}>
+              <h3
+                className={`text-xl font-semibold text-gray-900 mb-3 h-14 flex items-center justify-center ${montserrat.className} mb-5`}
+              >
                 Regalos Funcionales con Estilo y Calidad
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Ofrecemos regalos que combinan utilidad y elegancia, perfectos
-                para personas que valoran la calidad y los detalles.
+                ofrecemos regalos que combinan utilidad y elegancia, perfectos
+                para personas que valoran la calidad y los detalles
               </p>
             </div>
 
@@ -108,7 +118,9 @@ export const MainAbout = () => {
               <div className="flex justify-center items-center mx-auto mb-6 w-20 h-20 bg-blue-100 rounded-full">
                 <FaHandshake className="text-[#13294b]" size={40} />
               </div>
-              <h3 className={`text-xl font-semibold text-gray-900 mb-3 h-14 flex items-center justify-center ${montserrat.className} mb-5`}>
+              <h3
+                className={`text-xl font-semibold text-gray-900 mb-3 h-14 flex items-center justify-center ${montserrat.className} mb-5`}
+              >
                 Asesoría Personalizada
               </h3>
               <p className="text-gray-600 leading-relaxed">
@@ -123,11 +135,13 @@ export const MainAbout = () => {
               <div className="flex justify-center items-center mx-auto mb-6 w-20 h-20 bg-blue-100 rounded-full">
                 <FaHandSparkles className="text-[#13294b]" size={40} />
               </div>
-              <h3 className={`text-xl font-semibold text-gray-900 mb-3 h-14 flex items-center justify-center ${montserrat.className} mb-5`}>
+              <h3
+                className={`text-xl font-semibold text-gray-900 mb-3 h-14 flex items-center justify-center ${montserrat.className} mb-5`}
+              >
                 Regalos Innovadores
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Si buscas algo diferente, tenemos opciones creativas para
+                sí buscas algo diferente tenemos opciones creativas para
                 destacar y dejar huella.
               </p>
             </div>
@@ -137,12 +151,13 @@ export const MainAbout = () => {
               <div className="flex justify-center items-center mx-auto mb-6 w-20 h-20 bg-blue-100 rounded-full">
                 <FaLeaf className="text-[#13294b]" size={40} />
               </div>
-              <h3 className={`text-xl font-semibold text-gray-900 mb-3 h-14 flex items-center justify-center ${montserrat.className} mb-5`}>
+              <h3
+                className={`text-xl font-semibold text-gray-900 mb-3 h-14 flex items-center justify-center ${montserrat.className} mb-5`}
+              >
                 Sostenibilidad
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Cuidamos al planeta con prácticas ecofriendly y empaques
-                responsables.
+                Cuidamos al planeta con prácticas ecofriendly.
               </p>
             </div>
           </div>
