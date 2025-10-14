@@ -28,9 +28,9 @@ export const HeroHistory = () => {
           <h1
             className={`text-4xl md:text-6xl text-primary font-semibold ${montserrat.className}`}
           >
-            Nuestra historia <br />
+            Mi historia <br />
             <span className={`italic text-xl font-bold`}>
-              Tranformar el acto de regalar a un momento extraordinario
+              Transformar el acto de regalar en un momento extraordinario
             </span>
           </h1>
           <p

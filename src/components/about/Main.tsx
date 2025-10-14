@@ -79,12 +79,12 @@ export const MainAbout = () => {
         <p
           className={` mt-4 text-lg text-gray-700 leading-relaxed ${montserrat.className}`}
         >
-          Desde la fundación de Emozziona en el año 2022, teníamos una idea
-          clara: un regalo es mucho más que un objeto. Regalar es un gesto que
-          genera emociones, como sonrisas, abrazos y recuerdos que perduran.
-          Nacimos con el propósito de emocionar a las personas, combinando la
-          calidad, creatividad y un estilo auténtico, dejando una huella
-          positiva en el mundo.
+          Desde la fundación de Emozziona en el año 2022 teníamos una idea
+          clara, que un regalo es mucho más que dar un objeto, regalar es un
+          gesto que genera emociones, como sonrisas, abrazos y recuerdos que
+          perduran. Nacimos con el propósito de emocionar a las personas,
+          combinando la calidad, creatividad y un estilo auténtico, dejando una
+          huella positiva en el mundo.
         </p>
       </section>
 
