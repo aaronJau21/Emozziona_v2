@@ -91,15 +91,18 @@ export const GaleryImage = () => {
     <div className="container mx-auto px-4 py-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-9">
         {images.map((src, index) => (
-          <Image
-            key={index}
-            src={src}
-            alt={`Image ${index + 1}`}
-            width={500}
-            height={500}
-            className="rounded-4xl border-4 border-white"
-            loading="lazy"
-          />
+          <div
+            key={src}
+            className="group relative overflow-hidden rounded-4xl shadow-md transition-all duration-300 ease-in-out hover:shadow-2xl border-8 border-white"
+          >
+            <Image
+              src={src}
+              alt={`Producto de Emozziona ${index + 1}`}
+              width={900}
+              height={900}
+              className="h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+            />
+          </div>
         ))}
       </div>
       {hasMore && (
