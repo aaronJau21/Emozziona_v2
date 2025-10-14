@@ -97,7 +97,7 @@ export const GaleryImage = () => {
             alt={`Image ${index + 1}`}
             width={500}
             height={500}
-            className="rounded-4xl"
+            className="rounded-4xl border-4 border-white"
             loading="lazy"
           />
         ))}

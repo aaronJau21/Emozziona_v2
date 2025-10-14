@@ -13,7 +13,7 @@ type Category =
 
 export const Product = () => {
   const estilosBotonesBase =
-    "px-8 py-3 bg-transparent border-2 border-marron text-marron font-semibold rounded-full transition-all duration-300 ease-in-out cursor-pointer";
+    "px-8 py-3 bg-transparent text-marron font-semibold rounded-full transition-all duration-300 ease-in-out cursor-pointer";
   const estilosBotonesHover = "hover:bg-marron hover:text-white";
 
   const [category, setCategory] = useState<Category>("global");
@@ -59,7 +59,7 @@ export const Product = () => {
       <h2
         className={`text-3xl sm:text-4xl text-center text-marron font-bol font-tthove`}
       >
-        Productos más populares
+        Regalos más destacados
       </h2>
 
       <div className="flex justify-center items-center gap-4 my-8">
@@ -85,7 +85,7 @@ export const Product = () => {
           className={buttonClass("echo_mano")}
           onClick={() => setCategory("echo_mano")}
         >
-          Echo a mano
+          Hecho a mano
         </button>
         <button
           className={buttonClass("global")}

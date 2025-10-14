@@ -8,12 +8,14 @@ export const Title = () => {
 
       <div className="relative z-10">
         <h1
-          className={`text-4xl sm:text-5xl font-bold text-gray-900 tracking-tight ${trajan.className}`}
+          className={`text-4xl sm:text-5xl font-bold text-gray-900 tracking-tight font-tthove`}
         >
           Más que regalos, creamos conexiones
         </h1>
         <div className="w-24 h-1 bg-gradient-to-r from-[#13294b] to-blue-400 mx-auto my-4 rounded-full" />
-        <p className={`mt-3 text-lg text-gray-600 italic ${montserrat.className}`}>
+        <p
+          className={`mt-3 text-lg text-gray-600 italic ${montserrat.className}`}
+        >
           Cada detalle cuenta una historia, cada obsequio deja huella.
         </p>
       </div>
