@@ -39,11 +39,17 @@ export const NavBar = () => {
             height={500}
             className="w-16 rounded-full"
           />
-          <h2
+          {/* <h2
             className={`text-white text-3xl ${trajan.className} font-semibold`}
           >
             Emozziona
-          </h2>
+          </h2> */}
+          <Image
+            src={"/logo.webp"}
+            alt="Logo de Emozziona"
+            width={200}
+            height={200}
+          />
         </Link>
 
         <nav className="flex flex-row gap-x-3.5 text-white">
