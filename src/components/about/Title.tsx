@@ -1,4 +1,4 @@
-import { montserrat, trajan } from "@/lib/fonts";
+import { montserrat } from "@/lib/fonts";
 
 export const Title = () => {
   return (

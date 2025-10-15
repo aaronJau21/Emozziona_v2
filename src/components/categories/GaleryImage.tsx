@@ -5,18 +5,15 @@ export const GaleryImage = () => {
   return (
     <>
       {allImages.map((image) => (
-        <div className="max-w-7xl mx-auto">
+        <div key={image.name} className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-primary">{image.name}</h2>
           <div className="grid grid-cols-4 gap-5 my-5">
             {image.category.map((img) => (
-              <div>
+              <div key={img.nombre}>
                 <p className="text-lg font-semibold text-primary">
                   {img.nombre}
                 </p>
-                <div
-                  key={img.img}
-                  className="group relative overflow-hidden rounded-4xl shadow-md transition-all duration-300 ease-in-out hover:shadow-2xl border-8 border-white"
-                >
+                <div className="group relative overflow-hidden rounded-4xl shadow-md transition-all duration-300 ease-in-out hover:shadow-2xl border-8 border-white">
                   <Image
                     src={img.img}
                     alt={`Producto de Emozziona ${img.nombre}`}
