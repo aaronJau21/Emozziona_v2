@@ -14,9 +14,9 @@ export const MainAbout = () => {
           Nuestra Misión
         </h2>
         <div className="flex flex-col md:flex-row items-center gap-8 mt-4">
-          <div className="w-full md:w-1/2">
+          <div className="w-full md:flex-1">
             <p
-              className={`text-xl font-semibold text-gray-700 leading-relaxed ${montserrat.className}`}
+              className={`text-xl font-semibold text-gray-700 leading-relaxed ${montserrat.className} text-justify`}
             >
               Nuestra misión es brindar experiencias memorables a través de
               regalos de calidad que transmitan gratitud, cercanía y valor en
@@ -26,12 +26,12 @@ export const MainAbout = () => {
               ambiental.
             </p>
           </div>
-          <div className="w-full md:w-1/2">
+          <div className="w-full md:flex-1 md:flex md:justify-center">
             <Image
               src="/about/vision.png"
               alt="Nuestra Misión"
-              width={450}
-              height={300}
+              width={350}
+              height={200}
               className="rounded-4xl object-cover"
             />
           </div>
@@ -44,9 +44,9 @@ export const MainAbout = () => {
           Nuestra Visión
         </h2>
         <div className="flex flex-col md:flex-row-reverse items-center gap-8 mt-4">
-          <div className="w-full md:w-1/2">
+          <div className="w-full md:flex-1">
             <p
-              className={`text-lg text-gray-700 font-semibold leading-relaxed ${montserrat.className}`}
+              className={`text-lg text-gray-700 font-semibold leading-relaxed ${montserrat.className} text-justify`}
             >
               Ser una empresa líder en lima y referente en Perú reconocida por
               transformar el acto de regalar en un momento extraordinario,
@@ -59,12 +59,12 @@ export const MainAbout = () => {
               positiva en el mundo.
             </p>
           </div>
-          <div className="w-full md:w-1/2">
+          <div className="w-full md:flex-1">
             <Image
               src="/about/mision.png"
               alt="Nuestra Visión"
-              width={450}
-              height={300}
+              width={350}
+              height={200}
               className="rounded-4xl object-cover"
             />
           </div>
@@ -77,7 +77,7 @@ export const MainAbout = () => {
           Nuestra Filosofía
         </h2>
         <p
-          className={` mt-4 text-lg text-gray-700 leading-relaxed ${montserrat.className}`}
+          className={` mt-4 text-lg text-gray-700 leading-relaxed ${montserrat.className} text-justify`}
         >
           Desde la fundación de Emozziona en el año 2022 teníamos una idea
           clara, que un regalo es mucho más que dar un objeto, regalar es un
