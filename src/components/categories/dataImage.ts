@@ -72,7 +72,7 @@ export const allImages: IImages[] = [
         nombre: "Día internacional de la Mujer",
         img: "/categories/10.png",
         reconocimiento:
-          "RUn cepillo de cabello de bambú. Un abanico de bambú. un jabón artesanal de marca Kallma. Una toalla de rostro de medida 30x30cm. Bombones ferrero Rocher por 3 unidades.",
+          "Un cepillo de cabello de bambú. Un abanico de bambú. un jabón artesanal de marca Kallma. Una toalla de rostro de medida 30x30cm. Bombones ferrero Rocher por 3 unidades.",
         presentacion:
           "Canasta de paja decorada con flores secas, lazo y tarjeta.",
       },
