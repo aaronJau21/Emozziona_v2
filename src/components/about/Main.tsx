@@ -7,7 +7,7 @@ import { montserrat, trajan } from "@/lib/fonts";
 
 export const MainAbout = () => {
   return (
-    <main className="space-y-20 max-w-7xl mx-auto mb-24 px-6">
+    <main className="space-y-20 max-w-7/12 mx-auto mb-24 px-6">
       {/* Misión */}
       <section>
         <h2 className="text-3xl sm:text-4xl font-semibold text-[#13294b] border-b-4 border-[#13294b]/30 inline-block pb-2">
