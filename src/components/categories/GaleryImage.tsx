@@ -26,7 +26,7 @@ export const GaleryImage = () => {
                   </div>
                 </div>
                 <p
-                  className={`text-xl pt-3 text-primary text-center ${popping.className}`}
+                  className={`text-lg pt-3 text-primary text-center ${popping.className}`}
                 >
                   {img.nombre}
                 </p>

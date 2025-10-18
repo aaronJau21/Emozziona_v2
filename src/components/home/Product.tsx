@@ -13,7 +13,7 @@ type Category =
 
 export const Product = () => {
   const estilosBotonesBase =
-    "px-8 py-3 bg-transparent text-marron font-semibold rounded-full transition-all duration-300 ease-in-out cursor-pointer";
+    "px-8 py-3 bg-transparent text-marron font-semibold rounded-full transition-all duration-300 ease-in-out cursor-pointer text-lg";
   const estilosBotonesHover = "hover:bg-marron hover:text-white";
 
   const [category, setCategory] = useState<Category>("global");
