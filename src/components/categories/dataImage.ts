@@ -172,7 +172,7 @@ export const allImages: IImages[] = [
     ],
   },
   {
-    name: '"Regalos personales"',
+    name: 'Regalos personales',
     category: [
       {
         nombre: "Box Cafetero",

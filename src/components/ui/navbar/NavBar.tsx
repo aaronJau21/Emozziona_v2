@@ -47,8 +47,8 @@ export const NavBar = () => {
           <Image
             src={"/logo.webp"}
             alt="Logo de Emozziona"
-            width={200}
-            height={200}
+            width={290}
+            height={290}
           />
         </Link>
 

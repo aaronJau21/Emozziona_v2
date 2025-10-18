@@ -34,7 +34,7 @@ export const MainAbout = () => {
             <Image
               src="/about/vision.png"
               alt="Nuestra Misión"
-              width={520}
+              width={300}
               height={360}
               className="rounded-3xl object-cover shadow-lg ring-1 ring-black/5 hover:scale-[1.03] transition-transform duration-500"
             />
@@ -71,7 +71,7 @@ export const MainAbout = () => {
             <Image
               src="/about/mision.png"
               alt="Nuestra Visión"
-              width={520}
+              width={300}
               height={360}
               className="rounded-3xl object-cover shadow-lg ring-1 ring-black/5 hover:scale-[1.03] transition-transform duration-500"
             />

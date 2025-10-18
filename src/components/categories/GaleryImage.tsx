@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { allImages } from "./dataImage";
+import { popping } from "@/lib/fonts";
 
 export const GaleryImage = () => {
   return (
@@ -24,7 +25,9 @@ export const GaleryImage = () => {
                     </p>
                   </div>
                 </div>
-                <p className="text-xl pt-3 font-semibold text-primary text-center">
+                <p
+                  className={`text-xl pt-3 text-primary text-center ${popping.className}`}
+                >
                   {img.nombre}
                 </p>
               </div>
