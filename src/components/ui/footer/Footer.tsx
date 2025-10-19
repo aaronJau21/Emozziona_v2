@@ -13,14 +13,21 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center ">
         <div className={`flex flex-col items-center gap-y-3 text-secondary`}>
           <h3 className="text-3xl font-semibold">Contáctenos</h3>
-          <a href="#" className="flex flex-row gap-x-1.5 items-center">
+          <a
+            href="https://wa.me/51902198142"
+            target="_blank"
+            className="flex flex-row gap-x-1.5 items-center"
+          >
             <FaPhoneAlt />
-            <span>+51 123456789</span>
+            <span>+51 902198142</span>
           </a>
 
-          <a href="#" className="flex flex-row gap-x-1.5 items-center">
+          <a
+            href="mailto:pedidos.emozziona@gmail.com"
+            className="flex flex-row gap-x-1.5 items-center hover:text-blue-600 transition-colors"
+          >
             <FaMailBulk />
-            <span>emozziona@gmail.com</span>
+            <span>pedidos.emozziona@gmail.com</span>
           </a>
         </div>
         <div>
