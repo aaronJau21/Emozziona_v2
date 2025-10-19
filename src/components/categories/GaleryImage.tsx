@@ -1,24 +1,39 @@
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 import { allImages } from "./dataImage";
 import { popping } from "@/lib/fonts";
 
 export const GaleryImage = () => {
+  const [loaded, setLoaded] = useState<Record<string, boolean>>({});
+
   return (
     <main className="max-w-7xl mx-auto">
       {allImages.map((image) => (
         <div key={image.name} className="my-16">
           <h2 className="text-3xl font-bold text-primary">{image.name}</h2>
-          <div className="grid grid-cols-4 gap-5 my-5">
+          <div className="grid grid-cols-3 gap-5 my-5">
             {image.category.map((img) => (
               <div key={img.nombre}>
                 <div className="group relative overflow-hidden rounded-4xl shadow-md transition-all duration-300 ease-in-out hover:shadow-2xl border-8 border-white">
+                  {/* Low-quality placeholder skeleton until image loads */}
+                  {!loaded[img.nombre] && (
+                    <div className="absolute inset-0 bg-gray-100 animate-pulse" />
+                  )}
+
                   <Image
                     src={img.img}
                     alt={`Producto de Emozziona ${img.nombre}`}
                     width={900}
                     height={900}
+                    loading="lazy"
+                    onLoadingComplete={() =>
+                      setLoaded((prev) => ({ ...prev, [img.nombre]: true }))
+                    }
                     className="h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
                   />
+
                   <div className="absolute inset-0 flex items-center justify-center bg-black/70 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <p className="text-white font-bold text-center px-3">
                       {img.reconocimiento}

@@ -57,7 +57,7 @@ export const Product = () => {
       id="productos"
     >
       <h2
-        className={`text-3xl sm:text-4xl text-center text-marron font-bol font-tthove`}
+        className={`text-3xl sm:text-4xl text-center text-marron font-bol font-tthove font-semibold`}
       >
         Regalos más destacados
       </h2>

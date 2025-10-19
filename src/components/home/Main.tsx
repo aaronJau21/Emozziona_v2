@@ -10,7 +10,7 @@ export const Main = () => {
         <div className="absolute inset-0 bg-black/40 to-transparent" />
 
         <div className="relative z-10 h-full flex flex-col items-center  text-white text-center px-4">
-          <div className="max-w-4xl animate-fade-in-up absolute top-36">
+          <div className="max-w-4xl animate-fade-in-up absolute top-52">
             <h1
               className={`text-4xl lg:text-6xl font-bold leading-tight drop-shadow-lg ${arimo.className}`}
             >
