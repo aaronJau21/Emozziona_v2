@@ -31,11 +31,7 @@ export const GaleryImage = () => {
           <h2 className="text-3xl font-bold text-primary">{image.name}</h2>
           <div className="grid grid-cols-3 gap-5 my-5">
             {image.category.map((img) => (
-              <div
-                key={img.img}
-                onClick={() => openModal(img)}
-                className="cursor-pointer"
-              >
+              <div key={img.img} className="cursor-pointer">
                 <div className="relative overflow-hidden rounded-4xl shadow-md transition-all duration-300 ease-in-out hover:shadow-2xl border-8 border-white">
                   {/* Low-quality placeholder skeleton until image loads */}
                   {!loaded[img.nombre] && (
@@ -51,6 +47,7 @@ export const GaleryImage = () => {
                     onLoadingComplete={() =>
                       setLoaded((prev) => ({ ...prev, [img.nombre]: true }))
                     }
+                    onClick={() => openModal(img)}
                     className="h-full w-full object-cover transition-transform duration-300 ease-in-out"
                   />
                 </div>

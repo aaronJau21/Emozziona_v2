@@ -31,7 +31,7 @@ export const allImages: IImages[] = [
           " Caja Kraft decorada con viruta, lazo y tarjeta personalizada",
       },
       {
-        nombre: "Kit de bienvenidar",
+        nombre: "Kit de bienvenida",
         img: "/categories/4.png",
         reconocimiento:
           "Un notebook personalizado. Un vaso térmico de 300 ml. personalizado a grabado láser. Bombones ferrero Rocher (3 unidades).",
@@ -172,7 +172,7 @@ export const allImages: IImages[] = [
     ],
   },
   {
-    name: 'Regalos personales',
+    name: "Regalos personales",
     category: [
       {
         nombre: "Box Cafetero",
@@ -194,7 +194,7 @@ export const allImages: IImages[] = [
         nombre: "Día del padre",
         img: "/categories/22.png",
         reconocimiento:
-          "Regalos personales/ Box Felicidades: Un vaso térmico de 300 ml personalizado. Un lapicero de metal en cajita transparente. Una libreta de notas de medida 14x9cm personalizado. Bombones ferrero Rocher (3 unidades). Un bouquet de flores secas.",
+          "Un vaso térmico de 300 ml personalizado. Un lapicero de metal en cajita transparente. Una libreta de notas de medida 14x9cm personalizado. Bombones ferrero Rocher (3 unidades). Un bouquet de flores secas.",
         presentacion:
           "Una caja de regalo redonda decorada con viruta, lazo y tarjeta personalizada.",
       },
@@ -213,7 +213,7 @@ export const allImages: IImages[] = [
           "Una caja Kraft decorada con viruta y lazo y tarjeta con dedicatoria.",
       },
       {
-        nombre: "Box Felicidades",
+        nombre: "Momentos felices",
         img: "/categories/32.png",
         reconocimiento:
           "Un mini espumante Freixenet con un sorbete decorado. Una barra de chocolate premium Cacaosuyo al 40% de cacao. Una vela artesanal en forma de concha de mar.",
@@ -229,7 +229,7 @@ export const allImages: IImages[] = [
           "Caja Kraft decorada con viruta y lazo y tarjeta con dedicatoria.",
       },
       {
-        nombre: "Antifaz satinado grueso",
+        nombre: "Kit de cuidado personal",
         img: "/categories/34.png",
         reconocimiento:
           "Un roller de cuarzo. Una vela artesanal (ver galería de velas). Una tabla de chocolate premium cacaosuyo al 40% de cacao. Una lima de uñas de 4 funciones.",
@@ -245,7 +245,7 @@ export const allImages: IImages[] = [
           "Caja Kraft decorada con viruta, lazo y tarjeta con dedicatoria.",
       },
       {
-        nombre: "Box Felicidades",
+        nombre: "Momentos felices",
         img: "/categories/37.png",
         reconocimiento:
           "Cafetera italiana para dos tazas en color negro con mango de madera. Una taza con diseño temático.",

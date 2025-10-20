@@ -18,7 +18,7 @@ export const MainAbout = () => {
           {/* Texto */}
           <div>
             <p
-              className={`text-[1.125rem] md:text-lg text-gray-700 leading-relaxed ${montserrat.className} text-justify`}
+              className={`text-[1.125rem] md:text-xl text-gray-700 leading-relaxed ${montserrat.className} text-justify`}
             >
               Nuestra misión es brindar experiencias memorables a través de
               regalos de calidad que transmitan gratitud, cercanía y valor en
@@ -34,7 +34,7 @@ export const MainAbout = () => {
             <Image
               src="/about/vision.png"
               alt="Nuestra Misión"
-              width={300}
+              width={500}
               height={360}
               className="rounded-3xl object-cover shadow-lg ring-1 ring-black/5 hover:scale-[1.03] transition-transform duration-500"
             />
@@ -52,7 +52,7 @@ export const MainAbout = () => {
           {/* Texto */}
           <div className="order-2 md:order-1">
             <p
-              className={`text-[1.05rem] md:text-lg text-gray-700 leading-relaxed ${montserrat.className} text-justify`}
+              className={`text-[1.05rem] md:text-xl text-gray-700 leading-relaxed ${montserrat.className} text-justify`}
             >
               Ser una empresa líder en Lima y referente en Perú, reconocida por
               transformar el acto de regalar en un momento extraordinario,
@@ -71,7 +71,7 @@ export const MainAbout = () => {
             <Image
               src="/about/mision.png"
               alt="Nuestra Visión"
-              width={300}
+              width={500}
               height={360}
               className="rounded-3xl object-cover shadow-lg ring-1 ring-black/5 hover:scale-[1.03] transition-transform duration-500"
             />
@@ -121,47 +121,45 @@ export const MainAbout = () => {
           sostenibilidad.
         </p>
 
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Card base */}
-          {[
-            {
-              icon: <FaGift size={40} className="text-[#13294b]" />,
-              title: "Regalos Funcionales con Estilo",
-              text: "Combinamos utilidad y elegancia para personas que valoran la calidad y los detalles.",
-            },
-            {
-              icon: <FaHandshake size={40} className="text-[#13294b]" />,
-              title: "Asesoría Personalizada",
-              text: "Te acompañamos desde la idea hasta la entrega para reforzar la relación con tus clientes y colaboradores.",
-            },
-            {
-              icon: <FaHandSparkles size={40} className="text-[#13294b]" />,
-              title: "Regalos Innovadores",
-              text: "Opciones creativas y diferentes para destacar y dejar huella.",
-            },
-            {
-              icon: <FaLeaf size={40} className="text-[#13294b]" />,
-              title: "Sostenibilidad",
-              text: "Cuidamos el planeta con prácticas eco-friendly y selección responsable de materiales.",
-            },
-          ].map((c, i) => (
-            <div
-              key={i}
-              className="group bg-white p-8 rounded-2xl shadow-md ring-1 ring-black/5 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-            >
-              <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-[#d6ccc3]/40 group-hover:bg-[#e8a54d]/30 transition-colors">
-                {c.icon}
+        <div className="mt-12 bg-white p-8 rounded-2xl shadow-md ring-1 ring-black/5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                icon: <FaGift size={40} className="text-[#13294b]" />,
+                title: "Regalos Funcionales con Estilo",
+                text: "Combinamos utilidad y elegancia para personas que valoran la calidad y los detalles.",
+              },
+              {
+                icon: <FaHandshake size={40} className="text-[#13294b]" />,
+                title: "Asesoría Personalizada",
+                text: "Te acompañamos desde la idea hasta la entrega para reforzar la relación con tus clientes y colaboradores.",
+              },
+              {
+                icon: <FaHandSparkles size={40} className="text-[#13294b]" />,
+                title: "Regalos Innovadores",
+                text: "Opciones creativas y diferentes para destacar y dejar huella.",
+              },
+              {
+                icon: <FaLeaf size={40} className="text-[#13294b]" />,
+                title: "Sostenibilidad",
+                text: "Cuidamos el planeta con prácticas eco-friendly y selección responsable de materiales.",
+              },
+            ].map((c, i) => (
+              <div key={i} className="group transition-all duration-300">
+                <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-[#d6ccc3]/40 group-hover:bg-[#e8a54d]/30 transition-colors">
+                  {c.icon}
+                </div>
+                <h3
+                  className={`mb-3 text-xl font-semibold text-gray-900 text-center ${montserrat.className}`}
+                >
+                  {c.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-center">
+                  {c.text}
+                </p>
               </div>
-              <h3
-                className={`mb-3 text-xl font-semibold text-gray-900 text-center ${montserrat.className}`}
-              >
-                {c.title}
-              </h3>
-              <p className="text-gray-600 leading-relaxed text-center">
-                {c.text}
-              </p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
     </main>

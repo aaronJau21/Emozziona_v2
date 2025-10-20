@@ -1,5 +1,6 @@
 import { arimo } from "@/lib/fonts";
 import Image from "next/image";
+import Link from "next/link";
 import {
   FaFacebook,
   FaInstagram,
@@ -9,55 +10,81 @@ import {
 
 export const Footer = () => {
   return (
-    <footer className={`bg-primary text-white  ${arimo.className}`}>
-      <div className="max-w-7xl mx-auto flex justify-between items-center ">
-        <div className={`flex flex-col items-center gap-y-3 text-secondary`}>
-          <h3 className="text-3xl font-semibold">Contáctenos</h3>
-          <a
-            href="https://wa.me/51902198142"
-            target="_blank"
-            className="flex flex-row gap-x-1.5 items-center"
-          >
-            <FaPhoneAlt />
-            <span>+51 902198142</span>
-          </a>
+    <footer className={`bg-gray-900 text-gray-300 ${arimo.className}`}>
+      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+          {/* Logo and Description */}
+          <div className="space-y-4">
+            <Link href="/" className="block">
+              <Image
+                src="/logo-gold.jpeg"
+                alt="Logo de Emozziona"
+                width={150}
+                height={150}
+                className="rounded-full"
+              />
+            </Link>
+          </div>
 
-          <a
-            href="mailto:pedidos.emozziona@gmail.com"
-            className="flex flex-row gap-x-1.5 items-center hover:text-blue-600 transition-colors"
-          >
-            <FaMailBulk />
-            <span>pedidos.emozziona@gmail.com</span>
-          </a>
-        </div>
-        <div>
-          <Image
-            src={"/logo-gold.jpeg"}
-            alt="Logo de emozziona"
-            width={500}
-            height={500}
-            className="w-52"
-          />
-        </div>
-        <div className="flex flex-col items-center gap-y-3">
-          <h3 className="text-3xl font-semibold">Síguenos</h3>
+          {/* Contact Info */}
+          <div className="space-y-4 text-[#e8a54d]">
+            <h3 className="text-xl font-semibold ">Contáctenos</h3>
+            <ul className="space-y-2">
+              <li>
+                <a
+                  href="https://wa.me/51902198142"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-x-3 hover:text-white transition-colors"
+                >
+                  <FaPhoneAlt />
+                  <span>+51 902 198 142</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:pedidos.emozziona@gmail.com"
+                  className="flex items-center gap-x-3 hover:text-white transition-colors"
+                >
+                  <FaMailBulk />
+                  <span>pedidos.emozziona@gmail.com</span>
+                </a>
+              </li>
+            </ul>
+          </div>
 
-          <a
-            href="https://web.facebook.com/emozziona"
-            target="_blank"
-            className="flex flex-row items-center gap-x-1.5"
-          >
-            <FaFacebook />
-            Facebook
-          </a>
-          <a
-            href="https://www.instagram.com/emozziona/"
-            target="_blank"
-            className="flex flex-row items-center gap-x-1.5"
-          >
-            <FaInstagram />
-            Instagram
-          </a>
+          {/* Social Media */}
+          <div className="space-y-4 text-[#e8a54d]">
+            <h3 className="text-xl font-semibold ">Síguenos</h3>
+            <div className="flex space-x-4">
+              <a
+                href="https://web.facebook.com/emozziona"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                <FaFacebook size={24} color="#e8a54d" />
+                <span className="sr-only">Facebook</span>
+              </a>
+              <a
+                href="https://www.instagram.com/emozziona/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                <FaInstagram size={24} color="#e8a54d" />
+                <span className="sr-only">Instagram</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="mt-12 border-t border-gray-800 pt-8 text-center">
+          <p className="text-[#e8a54d]">
+            &copy; {new Date().getFullYear()} Emozziona. Todos los derechos
+            reservados.
+          </p>
         </div>
       </div>
     </footer>
