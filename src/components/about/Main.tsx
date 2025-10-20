@@ -98,7 +98,7 @@ export const MainAbout = () => {
         <p
           className={`relative mt-6 text-[1.05rem] md:text-lg text-gray-700 leading-relaxed ${montserrat.className} text-justify`}
         >
-          En Emozziona creemos que regalar va más allá de un objeto. Es una
+          En Emozziona creemos que regalar va mas allá de dar un objeto. Es una
           forma de transmitir emociones, gratitud y cercanía. Cada detalle está
           pensado para generar una conexión auténtica y duradera, combinando{" "}
           <span className="font-semibold text-[#b25b12]">
@@ -111,13 +111,13 @@ export const MainAbout = () => {
       {/* Propuesta Única de Valor */}
       <section className="py-16">
         <h2
-          className={`text-4xl sm:text-5xl font-bold text-center text-[#13294b] ${trajan.className}`}
+          className={`text-4xl sm:text-4xl font-bold text-center text-[#13294b] font-tthove`}
         >
           Propuesta Única de Valor
         </h2>
 
         <p className={`mt-4 text-center text-gray-600 ${montserrat.className}`}>
-          Soluciones de gifting que combinan estética, funcionalidad y
+          Soluciones de regalos que combinan estética, funcionalidad y
           sostenibilidad.
         </p>
 
@@ -145,16 +145,19 @@ export const MainAbout = () => {
                 text: "Cuidamos el planeta con prácticas eco-friendly y selección responsable de materiales.",
               },
             ].map((c, i) => (
-              <div key={i} className="group transition-all duration-300">
-                <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-[#d6ccc3]/40 group-hover:bg-[#e8a54d]/30 transition-colors">
+              <div
+                key={i}
+                className="group transition-all duration-300 flex flex-col items-center"
+              >
+                <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-[#d6ccc3]/40 group-hover:bg-[#e8a54d]/30 transition-colors flex-shrink-0">
                   {c.icon}
                 </div>
                 <h3
-                  className={`mb-3 text-xl font-semibold text-gray-900 text-center ${montserrat.className}`}
+                  className={`mb-3 text-xl font-semibold text-gray-900 text-center min-h-[3.5rem] flex items-center justify-center ${montserrat.className}`}
                 >
                   {c.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed text-center">
+                <p className="text-gray-600 leading-relaxed text-center flex-grow">
                   {c.text}
                 </p>
               </div>

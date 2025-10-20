@@ -20,14 +20,17 @@ export const Main = () => {
         </div>
       </main>
 
-      <main className="md:hidden">
-        <Image
-          src={"/home/main-mobile.png"}
-          alt="Imagen Principal de Emozziona"
-          width={500}
-          height={500}
-          className="w-full"
-        />
+      <main className=" md:hidden">
+        <div className="relative">
+          <div className="absolute inset-0 bg-black/40 to-transparent" />
+          <Image
+            src={"/home/main-mobile.png"}
+            alt="Imagen Principal de Emozziona"
+            width={500}
+            height={500}
+            className="w-full "
+          />
+        </div>
         <div className="max-w-4xl px-4 sm:px-6 lg:px-8 rounded-lg py-8 ">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl text-center font-semibold">
             Regalos Personalizados para Momentos Inolvidables

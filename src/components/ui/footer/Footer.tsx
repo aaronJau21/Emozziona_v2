@@ -1,4 +1,4 @@
-import { arimo } from "@/lib/fonts";
+import { arimo, popping } from "@/lib/fonts";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -15,7 +15,7 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           {/* Logo and Description */}
-          <div className="space-y-4">
+          <div className="">
             <Link href="/" className="block">
               <Image
                 src="/logo-gold.jpeg"
@@ -25,6 +25,10 @@ export const Footer = () => {
                 className="rounded-full"
               />
             </Link>
+
+            <p className={`text-[#e8a54d] ${popping.className} text-sm `}>
+              Disfruta, celebra,... emozziona
+            </p>
           </div>
 
           {/* Contact Info */}
@@ -56,8 +60,10 @@ export const Footer = () => {
 
           {/* Social Media */}
           <div className="space-y-4 text-[#e8a54d]">
-            <h3 className="text-xl font-semibold ">Síguenos</h3>
-            <div className="flex space-x-4">
+            <h3 className="text-xl font-semibold ">
+              Síguenos en nuestras redes:
+            </h3>
+            <div className="flex items-center pl-16 gap-x-6">
               <a
                 href="https://web.facebook.com/emozziona"
                 target="_blank"
