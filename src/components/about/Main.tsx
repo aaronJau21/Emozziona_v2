@@ -56,13 +56,14 @@ export const MainAbout = () => {
             >
               Ser una empresa líder en Lima y referente en Perú, reconocida por
               transformar el acto de regalar en un momento extraordinario,
-              innovador y con compromiso eco-friendly. Desde la fundación de{" "}
+              innovador y con compromiso eco-friendly.
+              {/* Desde la fundación de{" "}
               <span className="font-semibold">Emozziona</span> en 2022, tenemos
               una idea clara: un regalo es mucho más que dar un objeto; es un
               gesto que genera emociones, sonrisas, abrazos y recuerdos que
               perduran. Nacimos con el propósito de emocionar a las personas,
               combinando calidad, creatividad y un estilo auténtico, dejando una
-              huella positiva en el mundo.
+              huella positiva en el mundo. */}
             </p>
           </div>
 

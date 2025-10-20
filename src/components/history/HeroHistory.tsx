@@ -26,8 +26,7 @@ export const HeroHistory = () => {
     Diseñamos un proceso que va más allá del objeto: 
     seleccionamos piezas útiles, mensajes con propósito y empaques 
     que despiertan un auténtico efecto “wow”. 
-    Gracias a ello, las primeras empresas de gran trayectoria 
-    confiaron en nosotros para expresar sus emociones a través de regalos.
+    Gracias a ello, gracias a ello, Empresas de amplia trayectoria confiaron en nosotros sus emociones a través de regalos.
   `,
     },
     {

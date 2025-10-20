@@ -98,7 +98,7 @@ export const allImages: IImages[] = [
           "Set de accesorios para vino con lazo y tarjeta personalizada.",
       },
       {
-        nombre: "Cumpleaño",
+        nombre: "Cumpleaños",
         img: "/categories/16.png",
         reconocimiento: "llavero de cuero con frase grabada a láser.",
         presentacion: "Cajita decorada con lazo y tarjeta.",
@@ -199,7 +199,7 @@ export const allImages: IImages[] = [
           "Una caja de regalo redonda decorada con viruta, lazo y tarjeta personalizada.",
       },
       {
-        nombre: "Cumpleaño",
+        nombre: "Cumpleaños",
         img: "/categories/30.png",
         reconocimiento:
           "Llavero de cuero con frase personalizada grabado a láser. Presentación: cajita negra con tarjeta dedicatoria y lazo.",
