@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Footer, NavBar } from "@/components";
+import { WhastApp } from "@/components/ui/whatsApp/WhastApp";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://emozziona.com"),
@@ -81,6 +82,7 @@ export default function RootLayout({
         {children}
 
         <Footer />
+        <WhastApp />
       </body>
     </html>
   );

@@ -63,7 +63,7 @@ export const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
               >
-                <FaFacebook size={24} color="#e8a54d" />
+                <FaFacebook size={31} color="#e8a54d" />
                 <span className="sr-only">Facebook</span>
               </a>
               <a
@@ -72,7 +72,7 @@ export const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
               >
-                <FaInstagram size={24} color="#e8a54d" />
+                <FaInstagram size={31} color="#e8a54d" />
                 <span className="sr-only">Instagram</span>
               </a>
             </div>

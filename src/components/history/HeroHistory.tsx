@@ -45,7 +45,6 @@ export const HeroHistory = () => {
   return (
     <section className="w-full py-20 md:py-14">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-        
         {/* Columna de la imagen y bienvenida */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           <div className="relative w-full max-w-md mx-auto md:mx-0">
@@ -60,7 +59,9 @@ export const HeroHistory = () => {
               <p className={`text-lg font-semibold ${popping.className}`}>
                 ¡Hola, soy Justina Martinez!
               </p>
-              <p className={`text-sm ${popping.className}`}>Fundadora de <strong>Emozziona</strong></p>
+              <p className={`text-sm ${popping.className}`}>
+                Fundadora de <strong>Emozziona</strong>
+              </p>
             </div>
           </div>
         </div>
@@ -68,24 +69,34 @@ export const HeroHistory = () => {
         {/* Columna de la línea de tiempo */}
         <div className="text-primary">
           <h2
-            className={`text-5xl md:text-6xl font-bold mb-10 text-center md:text-left ${montserrat.className}`}
+            className={`text-5xl md:text-6xl font-bold mb-10 text-center md:text-left font-tthove`}
           >
-            Nuestra <br />
-            <span className="italic font-extrabold text-secondary drop-shadow-md">Historia</span>
+            Nuestra Historia
           </h2>
 
-          <p className={`text-lg text-gray-700 mb-12 text-center md:text-left ${popping.className}`}>
-            En Emozziona creemos que un detalle puede decir más que mil palabras,
-            un regalo tiene el poder de generar emociones y una profunda conexión.
+          <p
+            className={`text-lg text-gray-700 mb-12 text-center md:text-left ${popping.className}`}
+          >
+            En Emozziona creemos que un detalle puede decir más que mil
+            palabras, un regalo tiene el poder de generar emociones y una
+            profunda conexión.
           </p>
 
           <div className="relative border-l-4 border-secondary/50 pl-8 space-y-12">
             {temporalLine.map((item) => (
               <div key={item.year} className="relative">
                 <div className="absolute -left-10 -top-1.5 h-5 w-5 rounded-full bg-secondary shadow-md"></div>
-                <h3 className={`text-2xl font-bold text-secondary ${montserrat.className}`}>{item.year}</h3>
-                <h4 className={`text-xl font-semibold mt-2 mb-3 font-tthove`}>{item.title}</h4>
-                <p className={`text-base text-gray-600 leading-relaxed ${popping.className}`}>
+                <h3
+                  className={`text-2xl font-bold text-secondary ${montserrat.className}`}
+                >
+                  {item.year}
+                </h3>
+                <h4 className={`text-xl font-semibold mt-2 mb-3 font-tthove`}>
+                  {item.title}
+                </h4>
+                <p
+                  className={`text-base text-gray-600 leading-relaxed ${popping.className}`}
+                >
                   {item.description}
                 </p>
               </div>

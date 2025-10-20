@@ -98,7 +98,7 @@ export const allImages: IImages[] = [
           "Set de accesorios para vino con lazo y tarjeta personalizada.",
       },
       {
-        nombre: "Llavero de cuero",
+        nombre: "Cumpleaño",
         img: "/categories/16.png",
         reconocimiento: "llavero de cuero con frase grabada a láser.",
         presentacion: "Cajita decorada con lazo y tarjeta.",
@@ -199,7 +199,7 @@ export const allImages: IImages[] = [
           "Una caja de regalo redonda decorada con viruta, lazo y tarjeta personalizada.",
       },
       {
-        nombre: "Llavero de cuero",
+        nombre: "Cumpleaño",
         img: "/categories/30.png",
         reconocimiento:
           "Llavero de cuero con frase personalizada grabado a láser. Presentación: cajita negra con tarjeta dedicatoria y lazo.",
@@ -213,7 +213,7 @@ export const allImages: IImages[] = [
           "Una caja Kraft decorada con viruta y lazo y tarjeta con dedicatoria.",
       },
       {
-        nombre: "Momentos felices",
+        nombre: "Momentos especiales",
         img: "/categories/32.png",
         reconocimiento:
           "Un mini espumante Freixenet con un sorbete decorado. Una barra de chocolate premium Cacaosuyo al 40% de cacao. Una vela artesanal en forma de concha de mar.",
@@ -245,7 +245,7 @@ export const allImages: IImages[] = [
           "Caja Kraft decorada con viruta, lazo y tarjeta con dedicatoria.",
       },
       {
-        nombre: "Momentos felices",
+        nombre: "Momentos especiales",
         img: "/categories/37.png",
         reconocimiento:
           "Cafetera italiana para dos tazas en color negro con mango de madera. Una taza con diseño temático.",
