@@ -69,7 +69,7 @@ export const HeroHistory = () => {
         {/* Columna de la línea de tiempo */}
         <div className="text-primary">
           <h2
-            className={`text-5xl md:text-6xl font-bold mb-10 text-center md:text-left font-tthove`}
+            className={`text-5xl md:sm:text-4xl font-bold mb-10 text-center md:text-left font-tthove`}
           >
             Nuestra Historia
           </h2>

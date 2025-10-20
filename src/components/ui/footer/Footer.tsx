@@ -6,11 +6,12 @@ import {
   FaInstagram,
   FaPhoneAlt,
   FaMailBulk,
+  FaTiktok,
 } from "react-icons/fa";
 
 export const Footer = () => {
   return (
-    <footer className={`bg-gray-900 text-gray-300 ${arimo.className}`}>
+    <footer className={`bg-primary text-gray-300 ${arimo.className}`}>
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           {/* Logo and Description */}
@@ -74,6 +75,15 @@ export const Footer = () => {
               >
                 <FaInstagram size={31} color="#e8a54d" />
                 <span className="sr-only">Instagram</span>
+              </a>
+              <a
+                href="http://tiktok.com/@emozziona"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                <FaTiktok size={31} color="#e8a54d" />
+                <span className="sr-only">TikTok</span>
               </a>
             </div>
           </div>
