@@ -121,8 +121,8 @@ export const MainAbout = () => {
           sostenibilidad.
         </p>
 
-        <div className="mt-12 bg-white p-8 rounded-2xl shadow-md ring-1 ring-black/5">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="mt-12 bg-white p-4 sm:p-6 md:p-8 rounded-2xl shadow-md ring-1 ring-black/5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {[
               {
                 icon: <FaGift size={40} className="text-[#13294b]" />,
@@ -147,17 +147,17 @@ export const MainAbout = () => {
             ].map((c, i) => (
               <div
                 key={i}
-                className="group transition-all duration-300 flex flex-col items-center"
+                className="group transition-all duration-300 flex flex-col items-center p-4 hover:bg-gray-50/50 rounded-xl"
               >
-                <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-[#d6ccc3]/40 group-hover:bg-[#e8a54d]/30 transition-colors flex-shrink-0">
+                <div className="mb-4 md:mb-6 flex h-16 w-16 md:h-20 md:w-20 items-center justify-center rounded-full bg-[#d6ccc3]/40 group-hover:bg-[#e8a54d]/30 group-hover:scale-110 transition-all duration-300 flex-shrink-0">
                   {c.icon}
                 </div>
                 <h3
-                  className={`mb-3 text-xl font-semibold text-gray-900 text-center min-h-[3.5rem] flex items-center justify-center ${montserrat.className}`}
+                  className={`mb-2 md:mb-3 text-lg md:text-xl font-semibold text-gray-900 text-center min-h-[2.5rem] md:min-h-[3.5rem] flex items-center justify-center px-2 ${montserrat.className}`}
                 >
                   {c.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed text-center flex-grow">
+                <p className="text-sm md:text-base text-gray-600 leading-relaxed text-center flex-grow px-2">
                   {c.text}
                 </p>
               </div>

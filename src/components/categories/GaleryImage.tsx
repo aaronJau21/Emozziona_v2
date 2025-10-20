@@ -25,11 +25,11 @@ export const GaleryImage = () => {
   };
 
   return (
-    <main className="max-w-7xl mx-auto">
+    <main className="max-w-7xl mx-auto px-5 xl:px-0">
       {allImages.map((image) => (
         <div key={image.name} className="my-16">
           <h2 className="text-3xl font-bold text-primary">{image.name}</h2>
-          <div className="grid grid-cols-3 gap-5 my-5">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-5 my-5">
             {image.category.map((img) => (
               <div key={img.img} className="cursor-pointer">
                 <div className="relative overflow-hidden rounded-4xl shadow-md transition-all duration-300 ease-in-out hover:shadow-2xl border-8 border-white">
