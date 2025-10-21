@@ -24,7 +24,7 @@ export const Main = () => {
         <div className="relative">
           <div className="absolute inset-0 bg-black/40 to-transparent" />
           <Image
-            src={"/home/main-mobile.png"}
+            src={"/home/main-mobile.webp"}
             alt="Imagen Principal de Emozziona"
             width={500}
             height={500}
