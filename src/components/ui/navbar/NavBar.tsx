@@ -10,13 +10,15 @@ export const NavBar = () => {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [prevPathname, setPrevPathname] = useState(pathname);
 
   const isHome = pathname === "/";
 
   // Cerrar menú al cambiar de ruta
-  useEffect(() => {
+  if (pathname !== prevPathname) {
+    setPrevPathname(pathname);
     setMenuOpen(false);
-  }, [pathname]);
+  }
 
   // Prevenir scroll cuando el menú está abierto
   useEffect(() => {
