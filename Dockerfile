@@ -2,8 +2,8 @@
 FROM node:24.15.0-alpine AS deps
 RUN apk add --no-cache libc6-compat
 
-# Instalar pnpm
-RUN corepack enable && corepack prepare pnpm@latest --activate
+# Instalar pnpm (versión fijada en "packageManager" de package.json)
+RUN corepack enable
 
 WORKDIR /app
 
@@ -17,8 +17,8 @@ RUN pnpm install --frozen-lockfile
 # Etapa 2: Builder
 FROM node:24.15.0-alpine AS builder
 
-# Instalar pnpm
-RUN corepack enable && corepack prepare pnpm@latest --activate
+# Instalar pnpm (versión fijada en "packageManager" de package.json)
+RUN corepack enable
 
 WORKDIR /app
 
